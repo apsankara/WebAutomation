@@ -1,0 +1,8 @@
+<suite name="WebPosting">
+  <test thread-count="5" name="Test">
+    <classes>
+    <class name="script.TC0_PS_X64_Exeution"/>
+      <class name="script.TC0_PS_X86_Exeution"/>     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- WebPosting -->
