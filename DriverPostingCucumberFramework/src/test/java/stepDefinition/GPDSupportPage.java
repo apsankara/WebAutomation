@@ -9,21 +9,18 @@ import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import supportPageFactory.ApplyFilters;
-import supportPageFactory.GPDLanguage;
-import supportPageFactory.GPDPlatform;
-import supportPageFactory.GPDTag;
-import supportPageFactory.PSMoreDetailsLink;
 import supportPageFactory.SupportPage;
 
-public class SupportPageFun extends BaseClass {
+public class GPDSupportPage extends BaseClass{
 
-
+	
 	@Before
 	public void setup() throws IOException {
 
@@ -70,7 +67,7 @@ public class SupportPageFun extends BaseClass {
 		String supportpagetitle=driver.getTitle();
 		if(supportpagetitle.equalsIgnoreCase("Product Support and Drivers – Xerox"))
 		{
-			logger.info("################# Validate the support page without refresh #################");
+			logger.info("################# Validate the support page directly #################");
 		}
 		else {
 			logger.info("################# Validate the support page with refresh #################");
@@ -112,48 +109,12 @@ public class SupportPageFun extends BaseClass {
 		logger.info("################# Validate the Model LinkPage #################");
 		cSupportPage.ValidateGPDPage();
 	}
-
-	@When("SelectOS (.*)$")
-	public void select_OSName(String platform) {
-		logger.info("################# SelectOS #################");
-		cGPDPlatform=new GPDPlatform(driver);
-		cGPDPlatform.SelectPlatform(platform);
-	}
-
-	@When("SelectLanguage (.*)$")
-	public void select_LanguageName(String language) {
-		logger.info("################# SelectLanguage #################");
-		cGPDLanguage=new GPDLanguage(driver);
-		cGPDLanguage.SelectLanguage(language);
-	}
-
-	@When("SelectTag (.*)$")
-	public void select_TagName(String tag) {
-		logger.info("################# SelectTag #################");
-		cGPDTag=new GPDTag(driver);
-		cGPDTag.SelectTag(tag);
-	}
-
-	@And("Click Apply Filters Btn")
-	public void click_apply_filters_btn() {
-		logger.info("################# Apply Filters #################");
-		cApplyFilters=new ApplyFilters(driver);
-		cApplyFilters.ApplyFilter();
-	}
-
-	@And("Click PS Driver MoreDetails Link")
-	public void click_ps_driver_more_details_link() {
-		logger.info("################# PS Driver MoreDetails Link #################");
-		cPSMoreDetailsLink=new PSMoreDetailsLink(driver);
-		cPSMoreDetailsLink.ClickPSMoreDetailsLink();
-		cPSMoreDetailsLink.ValidatePSMoreDetails();
-	}
-
-	@And("closebrowser")
+	
+	@After
 	public void closebrowser() 
 	{
 		logger.info("################# Close Browser #################");
 		driver.quit();
 	}
-
+	
 }
