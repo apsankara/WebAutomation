@@ -3,7 +3,6 @@ package supportPageFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
@@ -23,7 +22,7 @@ public class SupportPage {
 		PageFactory.initElements(factory, this);
 		waithelper=new WaitHelper(driver);
 	}
-	
+
 	public static By ModelSearchBox=By.xpath("//*[@id=\"searchbox\"]/div[3]/div[2]/div/div[1]/input");
 	public static By ModelSearchBtn=By.className("coveo-search-button-svg");
 
@@ -31,7 +30,6 @@ public class SupportPage {
 	@FindBy(xpath="//*[@id=\"searchbox\"]/div[3]/div[2]/div/div[1]/input")
 	WebElement txt_ModelSearch;
 
-	@CacheLookup
 	@FindBy(className="coveo-search-button-svg")
 	WebElement btn_ModelSearch;
 
@@ -46,7 +44,7 @@ public class SupportPage {
 		waithelper.WaitForElement(txt_ModelSearch, 50);
 		txt_ModelSearch.clear();
 		txt_ModelSearch.sendKeys(model);
-		
+
 	}
 
 	public void BtnSearch() {
