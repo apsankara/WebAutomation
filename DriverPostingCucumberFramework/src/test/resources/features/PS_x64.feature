@@ -1,7 +1,7 @@
+@PS_x64bit
 Feature: Test XeroxGPDHomePage
   Verify the Xerox Drivers posted in XeroxGPDHomePage
   
-@PS_x64bit
 Scenario Outline: GPD PS_x64bit Driver Link Availability
     When SelectOS for PS_x64 <Platform>
     When SelectLanguage for PS_x64 <Language>

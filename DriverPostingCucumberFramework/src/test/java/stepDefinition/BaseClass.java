@@ -1,10 +1,11 @@
 package stepDefinition;
 
+
 import java.util.Properties;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.core.logging.Logger;
 import supportPageFactory.ApplyFilters;
 import supportPageFactory.GPDLanguage;
 import supportPageFactory.GPDPlatform;
@@ -13,6 +14,7 @@ import supportPageFactory.PSDriverDetails;
 import supportPageFactory.PSMoreDetailsLink_x64;
 import supportPageFactory.PSMoreDetailsLink_x86;
 import supportPageFactory.SupportPage;
+
 
 public class BaseClass {
 
@@ -27,6 +29,5 @@ public class BaseClass {
 	public PSDriverDetails cPSDriverDetails;
 	public static Logger logger;
 	public Properties configprop;
-	
-	
+		
 }

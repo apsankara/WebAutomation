@@ -1,1 +1,73 @@
 Automations notes from sankar
+
+https://www.youtube.com/c/pavanoltraining
+
+
+getText
+More details...
+Terms and Conditions
+DOWNLOAD
+Installation Guide
+More details...
+Terms and Conditions
+DOWNLOAD
+Installation Guide
+
+GetAttributes
+More details: V3 Xerox Global Print Driver PCL6
+null
+Download: V3 Xerox Global Print Driver PCL6
+null
+More details: V3 Xerox Global Print Driver PostScript
+null
+Download: V3 Xerox Global Print Driver PostScript
+null
+
+Accessible by name
+More details: V3 Xerox Global Print Driver PCL6
+Terms and Conditions
+Download: V3 Xerox Global Print Driver PCL6
+Installation Guide
+More details: V3 Xerox Global Print Driver PostScript
+Terms and Conditions
+Download: V3 Xerox Global Print Driver PostScript
+Installation Guide
+
+More details...
+More details: V3 Xerox Global Print Driver PCL6
+Terms and Conditions
+null
+DOWNLOAD
+Download: V3 Xerox Global Print Driver PCL6
+Installation Guide
+null
+More details...
+More details: V3 Xerox Global Print Driver PostScript
+Terms and Conditions
+null
+DOWNLOAD
+Download: V3 Xerox Global Print Driver PostScript
+Installation Guide
+null
+
+
+Win10-64bit
+Pcl6---//a[@name='&lid=more-details-155709']
+PS---//a[@name='&lid=more-details-155711']
+
+win10-32bit
+PCL6--//a[@name='&lid=more-details-156147']
+PS---//a[@name='&lid=more-details-156146']
+PS--//a[@name='&lid=more-details-156148']
+PCL6--//a[@name='&lid=more-details-156149']
+pcl6---//a[@name='&lid=more-details-155708']
+PS---//a[@name='&lid=more-details-155710']
+
+
+
+
+
+<a class="
+                              xrx-fw-unstyled-link
+                              
+                              " name="&amp;lid=more-details-155709" href="/en-us/product/global-printer-driver/content/155709" aria-label="More details: V3 Xerox Global Print Driver PCL6" xpath="1">More details...</a>

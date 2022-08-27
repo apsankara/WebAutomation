@@ -9,6 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="./src/test/resources/features",
 		glue="stepDefinition",
+		tags="@supportpage",
 		dryRun=false,
 		monochrome=true,
 		plugin= {"pretty", "html:target/cucumber1.html"}
