@@ -112,8 +112,10 @@ public class PSDriverDetails {
 		
 	}		
 	
-	public void Get_Download() {
+	
+	public void Get_Download() throws InterruptedException {
 		waithelper.WaitForElement(Download, 20);
-		Download.click();
+		Download.click();			
 }
+
 }

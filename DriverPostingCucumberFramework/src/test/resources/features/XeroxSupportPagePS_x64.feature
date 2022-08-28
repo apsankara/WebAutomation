@@ -24,6 +24,7 @@ Feature: Test XeroxSupportHomePage for PS_x64bit
     When Click CheckAgreeBtn
     When Clcik DownloadBtn
 
+		
     Examples: 
       | Platform                   | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                        |
       | Windows 10 x64             | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |

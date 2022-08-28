@@ -24,6 +24,7 @@ Feature: Test XeroxSupportHomePage for PS_x86bit
     When Click CheckAgreeBtn
     When Clcik DownloadBtn
 
+		
     Examples: 
       | Platform            | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                        |
       | Windows 10          | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 40.36 MB | Filename: UNIV_5.887.3.1_PS_x86.zip | Tags: GPD, PostScript, WHQL |

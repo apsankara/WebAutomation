@@ -14,6 +14,7 @@ import supportPageFactory.PSDriverDetails;
 import supportPageFactory.PSMoreDetailsLink_x64;
 import supportPageFactory.PSMoreDetailsLink_x86;
 import supportPageFactory.SupportPage;
+import supportPageFactory.VerifyDownloads;
 
 
 public class BaseClass {
@@ -27,6 +28,7 @@ public class BaseClass {
 	public PSMoreDetailsLink_x86 cPSMoreDetailsLink_x86;
 	public PSMoreDetailsLink_x64 cPSMoreDetailsLink_x64;
 	public PSDriverDetails cPSDriverDetails;
+	public VerifyDownloads cVerifyDownloads;
 	public static Logger logger;
 	public Properties configprop;
 		

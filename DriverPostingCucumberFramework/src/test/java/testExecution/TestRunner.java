@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features="./src/test/resources/features/",
 		glue="stepDefinition",
-		tags="@PS_x86bit or @PS_x64bit",
+		tags="@PS_x64bit",
 		dryRun=false,
 		monochrome=true,
 		plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
