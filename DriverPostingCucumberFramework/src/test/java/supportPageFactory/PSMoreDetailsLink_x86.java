@@ -16,11 +16,10 @@ public class PSMoreDetailsLink_x86 {
 	WebDriver driver;
 	WaitHelper waithelper;
 
-	// PS path value with clicking the more details link
-	// PS path value with clicking the more details link
+		// PS path value with clicking the more details link
+		// PS path value with clicking the more details link
 		//@FindBy(xpath="//div[@class='xrx-fw-css-grid-row']//a")
-		//List<WebElement> link_PSMoreDetails_x86;
-		
+		//List<WebElement> link_PSMoreDetails_x86;		
 		//@FindBy(xpath="(//li[contains(@class,'xrx-fw-downloads-panel__stat')])")
 		//List<WebElement> PSx86bitfilename;
 		

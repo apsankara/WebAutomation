@@ -13,7 +13,6 @@ import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
 import utilities.WaitHelper;
 
-
 public class PSMoreDetailsLink_x64 {
 
 	WebDriver driver;
@@ -48,13 +47,12 @@ public class PSMoreDetailsLink_x64 {
 			List<WebElement>link_PSMoreDetails_x64=driver.findElements(By.xpath("//div[contains(@class,'xrx-fw-css-grid-container')]//a"));	
 			//System.out.println(link_PSMoreDetails_x86.size());
 					waithelper.WaitForElement(link_PSMoreDetails_x64, 50);	
-					for (WebElement filename:PSx64bitfilename) 
-						
-					{			System.out.println(filename.getText());		
+					for (WebElement filename:PSx64bitfilename) 						
+					{			//System.out.println(filename.getText());		
 						if(filename.getText().contains("Filename: UNIV_5.887.3.0_PS_x64.zip"))				
 								{						
 							for(WebElement Pslinks :link_PSMoreDetails_x64) 
-							{					System.out.println(Pslinks.getAccessibleName());	
+							{					//System.out.println(Pslinks.getAccessibleName());	
 								if((Pslinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")))
 								 {			
 									Pslinks.click();
@@ -63,8 +61,7 @@ public class PSMoreDetailsLink_x64 {
 							}break;
 								}
 					}				
-			}catch(StaleElementReferenceException ex){
-				
+			}catch(StaleElementReferenceException ex){				
 			}
 	}
 
@@ -78,8 +75,4 @@ public class PSMoreDetailsLink_x64 {
 			System.out.println("PS More details name is not successful " +"Expected=V3 Xerox Global Print Driver PostScript "+"Actual=" +val);	
 		}
 	}
-
-
-
-
 }

@@ -16,7 +16,6 @@ import io.cucumber.junit.CucumberOptions;
 						"junit:target/cucumber-reports/Cucumber.xml",
 						"html:target/cucumber-reports/Cucumber.html"}		
 		)
-
 public class TestRunner {
 
 }
