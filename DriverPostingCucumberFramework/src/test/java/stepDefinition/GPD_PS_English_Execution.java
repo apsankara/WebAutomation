@@ -28,7 +28,7 @@ import supportPageFactory.PSMoreDetailsLink_x64;
 import supportPageFactory.PSMoreDetailsLink_x86;
 import supportPageFactory.SupportPage;
 
-public class GPD_PS_x86_Execution extends BaseClass {
+public class GPD_PS_English_Execution extends BaseClass {
 	public WebDriver driver;
 	public static Logger logger;
 	public Properties configprop;
@@ -102,19 +102,9 @@ public class GPD_PS_x86_Execution extends BaseClass {
 	}
 
 	@And("Clcik on Model Search Link")
-	public void clcik_on_model_search_link() {	
-		String linkpresent=driver.getPageSource();	
-		if(linkpresent.contains("Drivers & Downloads")) 
-		{		
-			cSupportPage.ModelSearchLink();
-			logger.info("################# Clciked on Model Search Link without refresh #################");
-		}
-		else
-		{
-			driver.navigate().refresh();
-			cSupportPage.ModelSearchLink();
-			logger.info("################# Clciked on Model Search Link with refresh #################");
-		}					
+	public void clcik_on_model_search_link() {
+		cSupportPage.ModelSearchLink();
+		logger.info("################# Clciked on Model Search Link #################");						
 	}		
 
 	@Then("Validate the Model LinkPage")

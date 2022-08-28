@@ -1,5 +1,7 @@
 package supportPageFactory;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,16 +37,18 @@ public class SupportPage {
 
 	@FindBy(xpath="//a[contains(text(),'Drivers & Downloads - Xerox Global Print Driver')]")
 	WebElement model_SearchLink;
+	
+	@FindBy(xpath="//div[@class='coveo-result-list-container coveo-list-layout-container']//a")
+	List<WebElement> ModelSearchlinks;
+	
 
 	@FindBy(xpath="//h2[contains(text(),'Xerox Global Print Driver')]")
 	WebElement validate_modelSearch;
-
 
 	public void typeModel(String model) {
 		waithelper.WaitForElement(txt_ModelSearch, 50);
 		txt_ModelSearch.clear();
 		txt_ModelSearch.sendKeys(model);
-
 	}
 
 	public void BtnSearch() {
@@ -53,18 +57,32 @@ public class SupportPage {
 	}
 
 	public void ModelSearchLink() {
-		waithelper.WaitForElement(model_SearchLink, 50);
-		model_SearchLink.click();
+		try {
+		//List<WebElement>ModelSearchlinks=driver.findElements(By.xpath("//div[@class='coveo-result-list-container coveo-list-layout-container']//a"));
+		waithelper.WaitForElement(ModelSearchlinks, 50);
+		//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
+		for(WebElement modellinks :ModelSearchlinks) 
+		{
+			//System.out.println(modellinks.getText());
+			if(modellinks.getText().contains("Drivers & Downloads - Xerox Global Print Driver"))
+			{
+				modellinks.click();
+				break;
+			}
+		}
+		}catch(Exception ex) {
+			
+		}
 	}
 
 	public void ValidateGPDPage() {
 		String val=validate_modelSearch.getText();
-		if(val.contentEquals("Xerox Global Print Driver"))
+		if(val.contains("Xerox Global Print Driver"))
 		{
-			System.out.println("GPD Page shown successfully " + "Expected: Xerox Global Print Driver "+"Actual: " +val);
+			System.out.println("GPD Page shown successfully " + "Expected=Xerox Global Print Driver "+"Actual=" +val);
 		}
 		else {
-			System.out.println("GPD Page is not shown successfully " +"Expected: Xerox Global Print Driver "+"Actual: " +val);
+			System.out.println("GPD Page is not shown successfully " +"Expected=Xerox Global Print Driver "+"Actual=" +val);
 			driver.navigate().refresh();
 		}
 	}
