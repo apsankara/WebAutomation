@@ -17,6 +17,7 @@ public class PSReleasedDate {
 ActionDriver aDriver=new ActionDriver();
 	
 	public void ReleasedDate() throws IOException {
+	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver ReleasedDate Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -44,11 +45,11 @@ ActionDriver aDriver=new ActionDriver();
     String driverReleased=aDriver.gettext(PSDriverDetails.Released);		
 	  if(driverReleased.equals(address))
 	  { 
-		  StartBrowser.childTest.pass(" Driver ReleasedDate Comparison is Successful "+"Actual- " +driverReleased +" Expected- " +address); 
+		  StartBrowser.childTest.pass(" Driver ReleasedDate Comparison is Successful "+"Actual=" +driverReleased +" Expected=" +address); 
 	 }
 	  else 
 	 {
-	  StartBrowser.childTest.fail(" Driver ReleasedDate Comparison is not Successful "+"Actual- " +driverReleased +" Expected- " +address);
+	  StartBrowser.childTest.fail(" Driver ReleasedDate Comparison is not Successful "+"Actual=" +driverReleased +" Expected=" +address);
 	  
 	  }	  
     

@@ -47,9 +47,9 @@ public class GPD_PS_x86_Execution extends BaseClass {
 		String br=configprop.getProperty("browser");
 
 		if(br.equals("chrome")) {
-			//WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 			//String ProjectPath="C:\\SeleniumSetup\\chromedriver_win32\\chromedriver.exe";		
-			System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");		
+			//System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");		
 			driver = new ChromeDriver();		
 			driver.manage().window().maximize();	
 			logger.info("################# Open Chrome Browser #################");
@@ -183,8 +183,8 @@ public class GPD_PS_x86_Execution extends BaseClass {
 	
 	
 	@And("Click PS_x86 Driver MoreDetails Link")
-	public void click_ps_x86_driver_more_details_link() {
-		logger.info("################# PS Driver MoreDetails Link #################");
+	public void click_ps_x86_driver_more_details_link() {		
+		logger.info("################# PS Driver MoreDetails Link #################" );
 		cPSMoreDetailsLink_x86=new PSMoreDetailsLink_x86(driver);
 		cPSMoreDetailsLink_x86.ClickPSMoreDetailsLink();
 		cPSMoreDetailsLink_x86.ValidatePSMoreDetails();
@@ -192,7 +192,7 @@ public class GPD_PS_x86_Execution extends BaseClass {
 	
 	@And("Click PS_x64 Driver MoreDetails Link")
 	public void click_ps_x64_driver_more_details_link() {
-		logger.info("################# PS Driver MoreDetails Link #################");
+		logger.info("################# PS_x64bit Driver MoreDetails Link #################");
 		cPSMoreDetailsLink_x64=new PSMoreDetailsLink_x64(driver);
 		cPSMoreDetailsLink_x64.ClickPSMoreDetailsLink();
 		cPSMoreDetailsLink_x64.ValidatePSMoreDetails();
@@ -201,55 +201,75 @@ public class GPD_PS_x86_Execution extends BaseClass {
 	
 	@When("Get PS_x86 Driver ReleasedDate (.*)$")
 	public void get_ps_x86_driver_releaseddate(String released) {
-		logger.info("################# Get PS Driver Released date #################");
+		logger.info("################# Get PS_x86 Driver ReleasedDate #################");
 		cPSDriverDetails=new PSDriverDetails(driver);
 		cPSDriverDetails.Get_ReleasedDate(released);
 	}
 
 	@When("Get PS_x64 Driver ReleasedDate (.*)$")
 	public void get_ps_x64_driver_releaseddate(String released) {
-		logger.info("################# Get PS Driver Released date #################");
+		logger.info("################# Get PS_x64 Driver ReleasedDate #################");
 		cPSDriverDetails=new PSDriverDetails(driver);
 		cPSDriverDetails.Get_ReleasedDate(released);
 	}
 	
 	@When("Get PS_x86 Driver Version (.*)$")
 	public void get_ps_x86_driver_version(String version) {
-
+		logger.info("################# Get PS_x86 Driver Version #################");
+		cPSDriverDetails.Get_Version(version);
 	}
 
 	@When("Get PS_x64 Driver Version (.*)$")
 	public void get_ps_x64_driver_version(String version) {
-
+		logger.info("################# Get PS_x64 Driver Version #################");
+		cPSDriverDetails.Get_Version(version);
 	}
 	
 	@When("Get PS_x86 Driver Size (.*)$")
 	public void get_ps_x86_driver_size(String size) {
-
+		logger.info("################# Get PS_x86 Driver Size #################");
+		cPSDriverDetails.Get_Size(size);
 	}
 
 	@When("Get PS_x64 Driver Size (.*)$")
 	public void get_ps_x64_driver_size(String size) {
-
+		logger.info("################# Get PS_x64 Driver Size #################");
+		cPSDriverDetails.Get_Size(size);
 	}
 	
 	@When("Get PS_x86 Driver Filename (.*)$")
 	public void get_ps_x86_driver_filename(String filename) {
-
+		logger.info("################# PS_x86 Driver Filename #################");
+		cPSDriverDetails.Get_Filename(filename);
 	}
 	@When("Get PS_x64 Driver Filename (.*)$")
 	public void get_ps_x64_driver_filename(String filename) {
-
+		logger.info("################# Get PS_x64 Driver Filename #################");
+		cPSDriverDetails.Get_Filename(filename);
 	}
 			
 	@When("Get PS_x86 Driver Tagname (.*)$")
 	public void get_ps_x86_driver_tagname(String tagname) {
-
+		logger.info("################# Get PS_x86 Driver Tagname #################");
+		cPSDriverDetails.Get_Tag(tagname);
 	}
 
 	@When("Get PS_x64 Driver Tagname (.*)$")
 	public void get_ps_x64_driver_tagname(String tagname) {
-
+		logger.info("################# Get PS_x64 Driver Tagname #################");
+		cPSDriverDetails.Get_Tag(tagname);
+	}
+	
+	@When("Click CheckAgreeBtn")
+	public void click_checkAgreeBtn() {
+		logger.info("#################  Click CheckAgreeBtn #################");
+		cPSDriverDetails.Get_Agree();
+	}
+	
+	@When("Clcik DownloadBtn")
+	public void clcik_downloadBtn() {
+		logger.info("################# Clcik DownloadBtn #################");
+		cPSDriverDetails.Get_Download();
 	}
 	
 	@After

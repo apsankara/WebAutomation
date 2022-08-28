@@ -25,11 +25,11 @@ public class TagSelection {
 		if(TagSelectdropdownbox.equals("GPD"))
 		  { 
 			Assert.assertEquals(TagSelectdropdownbox, "GPD");
-			  StartBrowser.childTest.pass("Language Selection Comparison is Successful "+"Actual- " +TagSelectdropdownbox +" Expected-GPD"); 
+			  StartBrowser.childTest.pass("Language Selection Comparison is Successful "+"Actual=" +TagSelectdropdownbox +" Expected=GPD"); 
 		 }
 		  else 
 		 {
-		  StartBrowser.childTest.fail("Language Selection Comparison is not Successful "+"Actual- " +TagSelectdropdownbox +" Expected-GPD");
+		  StartBrowser.childTest.fail("Language Selection Comparison is not Successful "+"Actual=" +TagSelectdropdownbox +" Expected=GPD");
 		  
 		  }        		
 	}

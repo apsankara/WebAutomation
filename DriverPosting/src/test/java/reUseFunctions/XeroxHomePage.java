@@ -15,12 +15,12 @@ public class XeroxHomePage {
 		try {
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("XeroxHomePageToSearchModel");
 		aDriver.navigateToApplication("https://www.support.xerox.com/");
-		aDriver.type(HomePage.DriverSearchBox, "Global Print Driver", "");
+		aDriver.type(HomePage.DriverSearchBox, "Xerox Global Print Driver", "");
 		aDriver.click(HomePage.DriverSearchBtn,"DriverSearchButton");
-		aDriver.click(GPDPage.GPDSearchLink, "GPDLink");
+		aDriver.MultipleElementSearchClick(GPDPage.GPDSearchLink,"Drivers & Downloads - Xerox Global Print Driver","GPDSerchLinkClick");
 		}catch(NoSuchElementException ex) {				
 			aDriver.navigateToApplication("https://www.support.xerox.com/en-us/product/global-printer-driver/downloads");
 			StartBrowser.childTest.fail("Url is not navigated successfully, hence directly enterd the GPD download page");
-	}
+	}		
 	}
 }

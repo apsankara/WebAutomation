@@ -17,6 +17,7 @@ public class PSVersion {
 ActionDriver aDriver=new ActionDriver();
 	
 	public void Version() throws IOException {
+	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Version Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -44,11 +45,11 @@ ActionDriver aDriver=new ActionDriver();
     String driverVersion=aDriver.gettext(PSDriverDetails.Version);		
 	  if(driverVersion.equals(address))
 	  { 
-		  StartBrowser.childTest.pass(" Driver Version Comparison is Successful "+"Actual- " +driverVersion +" Expected- " +address); 
+		  StartBrowser.childTest.pass(" Driver Version Comparison is Successful "+"Actual=" +driverVersion +" Expected=" +address); 
 	 }
 	  else 
 	 {
-	  StartBrowser.childTest.fail(" Driver Version Comparison is not Successful "+"Actual- " +driverVersion +" Expected- " +address);
+	  StartBrowser.childTest.fail(" Driver Version Comparison is not Successful "+"Actual=" +driverVersion +" Expected=" +address);
 	  
 	  }	  
     

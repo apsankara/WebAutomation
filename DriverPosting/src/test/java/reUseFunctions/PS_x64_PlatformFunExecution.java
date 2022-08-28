@@ -92,22 +92,22 @@ public class PS_x64_PlatformFunExecution {
 					//System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() +",");
 					String Excelvalue=sheet.getRow(i).getCell(j).getStringCellValue();
 					WebElement OSSelect=driver.findElement(GPDPlatform.OS);
+					StartBrowser.childTest=StartBrowser.parentTest.createNode("PlatformSelectionsAndComparisonwithEnglish");
 					aDriver.click(GPDPlatform.OS,"PlatformDropDownTag");
 					Select OSOption=new Select(OSSelect);
 					OSOption.selectByVisibleText(Excelvalue);       		
-					StartBrowser.childTest=StartBrowser.parentTest.createNode("PlatformSelectionsAndComparisonwithEnglish");
-					StartBrowser.childTest.pass("Successfully captured the OS from Excel :" +Excelvalue);
+					StartBrowser.childTest.pass("Successfully captured the OS from Excel=" +Excelvalue);
 					String osdropdownbox=OSOption.getFirstSelectedOption().getText();
-					StartBrowser.childTest.pass("Successfully captured the OS form WebPage :" +osdropdownbox);
+					StartBrowser.childTest.pass("Successfully captured the OS form WebPage=" +osdropdownbox);
 
 					if(Excelvalue.equals(osdropdownbox))
 					{ 
 						Assert.assertEquals(osdropdownbox, Excelvalue);
-						StartBrowser.childTest.pass("OS Selection and Comparison is Successful "+"Actual- " +Excelvalue +" Expected-"+osdropdownbox); 
+						StartBrowser.childTest.pass("OS Selection and Comparison is Successful "+"Actual=" +Excelvalue +" Expected="+osdropdownbox); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("OS Selection and Comparison is not Successful "+"Actual- " +Excelvalue +" Expected-"+osdropdownbox);
+						StartBrowser.childTest.fail("OS Selection and Comparison is not Successful "+"Actual=" +Excelvalue +" Expected="+osdropdownbox);
 
 					}  
 
@@ -121,11 +121,11 @@ public class PS_x64_PlatformFunExecution {
 					if(languagedropdownbox.equals("English (Global)"))
 					{ 
 						Assert.assertEquals(languagedropdownbox, "English (Global)");
-						StartBrowser.childTest.pass("Language and Selection Comparison is Successful "+"Actual- " +languagedropdownbox +" Expected-English (Global)"); 
+						StartBrowser.childTest.pass("Language and Selection Comparison is Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)"); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("Language Selection and Comparison is not Successful "+"Actual- " +languagedropdownbox +" Expected-English (Global)");
+						StartBrowser.childTest.fail("Language Selection and Comparison is not Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)");
 
 					}        		
 
@@ -141,11 +141,11 @@ public class PS_x64_PlatformFunExecution {
 					if(tagdropdownbox.equals("GPD"))
 					{ 
 						Assert.assertEquals(tagdropdownbox, "GPD");
-						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual- " +tagdropdownbox +" Expected-GPD"); 
+						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual=" +tagdropdownbox +" Expected=GPD"); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual- " +tagdropdownbox +" Expected-GPD");
+						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual=" +tagdropdownbox +" Expected=GPD");
 
 					}      
 
@@ -155,23 +155,23 @@ public class PS_x64_PlatformFunExecution {
 					//PSDriver more details link click  
 					aPSDriverMoreDetails.PSMoreDetails();
 
-					//PS Driver version Details and Comparison       		        		
-					aVersion.Version();   		
-
-					//PS driver FileName and comparison
-					aFilename_x64.FileName();
-
 					//PS driver ReleasedDate and comparison   
 					aReleasedDate.ReleasedDate();
-
+					
+					//PS Driver version Details and Comparison       		        		
+					aVersion.Version(); 
+					
 					//PS driver Size and comparison  
 					aSize_x64.FileSize();
+					
+					//PS driver FileName and comparison
+					aFilename_x64.FileName();
 
 					//PS Tag Name and comparison   
 					aTag.FileTag();
 
 					//PS Driver Agree Button
-					//aPSDriverAgree.PSDriverAgree();
+					aPSDriverAgree.PSDriverAgree();
 
 					//PS Driver Download Button
 					//aPSDriverDownload.PSDriverDownload();
@@ -182,13 +182,11 @@ public class PS_x64_PlatformFunExecution {
 					//java script for scroll up to get the platform tag	  
 					JavascriptExecutor js = (JavascriptExecutor)driver; 
 					js.executeScript("window.scrollBy(0,-1000)");
-					StartBrowser.childTest=StartBrowser.parentTest.createNode("URL Navigated Back to select another OS");
-
+					StartBrowser.childTest=StartBrowser.parentTest.createNode("URL Navigated Back to Select Another for OS-x64bit_Language_Tag");
+					StartBrowser.childTest.pass("Selection of another OS_x64bit_English (Global)_GPD");
 
 				}            
 			}
-
-
 		}catch(Exception ex)
 		{
 			StartBrowser.childTest.fail("Selection is not Successful due to incorrect value or something wrong");

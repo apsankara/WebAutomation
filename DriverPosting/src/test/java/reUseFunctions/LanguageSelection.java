@@ -16,7 +16,8 @@ public class LanguageSelection {
 	WebDriver driver;
 
 	public void EnglishGlobal() throws IOException {
-
+		
+		StartBrowser.childTest=StartBrowser.parentTest.createNode("Language Selection and Comparison");
 		WebElement languageSelect=driver.findElement(GPDLanguage.Language);		
 		aDriver.click(GPDLanguage.Language,"LanguageDropDownTag");
 		Select language=new Select(languageSelect);
@@ -27,11 +28,11 @@ public class LanguageSelection {
 		if(languagedropdownbox.equals("English (Global)"))
 		{ 
 			Assert.assertEquals(languagedropdownbox, "English (Global)");
-			StartBrowser.childTest.pass("Language Selection Comparison is Successful "+"Actual- " +languagedropdownbox +" Expected-English (Global)"); 
+			StartBrowser.childTest.pass("Language Selection Comparison is Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)"); 
 		}
 		else 
 		{
-			StartBrowser.childTest.fail("Language Selection Comparison is not Successful "+"Actual- " +languagedropdownbox +" Expected-English (Global)");
+			StartBrowser.childTest.fail("Language Selection Comparison is not Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)");
 
 		}        		
 	}

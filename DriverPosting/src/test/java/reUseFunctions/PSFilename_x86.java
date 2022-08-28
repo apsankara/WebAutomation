@@ -18,6 +18,8 @@ public class PSFilename_x86 extends PSDriverDetails{
 	ActionDriver aDriver=new ActionDriver();
 	
 	public void FileName() throws IOException {
+		
+	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Filename Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -45,11 +47,11 @@ public class PSFilename_x86 extends PSDriverDetails{
     String driverFilename=aDriver.gettext(PSDriverDetails.Filename);		
 	  if(driverFilename.equals(address))
 	  { 
-		  StartBrowser.childTest.pass(" Driver Filename Comparison is Successful "+"Actual- " +driverFilename +" Expected- " +address); 
+		  StartBrowser.childTest.pass(" Driver Filename Comparison is Successful "+"Actual=" +driverFilename +" Expected=" +address); 
 	 }
 	  else 
 	 {
-	  StartBrowser.childTest.fail(" Driver filename Comparison is not Successful "+"Actual- " +driverFilename +" Expected- " +address);
+	  StartBrowser.childTest.fail(" Driver filename Comparison is not Successful "+"Actual=" +driverFilename +" Expected=" +address);
 	  
 	  }	  
     

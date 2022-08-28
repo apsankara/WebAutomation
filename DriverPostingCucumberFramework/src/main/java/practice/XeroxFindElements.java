@@ -8,12 +8,16 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 
 public class XeroxFindElements {
 
 	public static void main(String[] args) throws InterruptedException {
-		//WebDriverManager.chromedriver().setup();
-		System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		//System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -39,32 +43,60 @@ public class XeroxFindElements {
 				break;
 			}
 		}
-		//Pdl search link and clicked on the more details of PS driver
-		List<WebElement>PdlSearchlinks=driver.findElements(By.xpath("(//div[contains(@class,'xrx-fw-css-grid-row')])[2]//a"));
-		System.out.println("No of Links Found for PdlSearchlinks: " +PdlSearchlinks.size());
-		//List<WebElement> driverdetails=driver.findElements(By.xpath("(//li[contains(@class,'xrx-fw-downloads-panel__stat')])"));	
 		
-		for(WebElement pdllinks :PdlSearchlinks) 
+		WebElement OSSelect=driver.findElement(By.name("platform"));
+		Select OSOption=new Select(OSSelect);
+		OSOption.selectByVisibleText("Windows 10");
+		
+		driver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div/form/div/div[4]/button")).click();
+		//Pdl search link and clicked on the more details of PS driver
+		//List<WebElement>PdlSearchlinks=driver.findElements(By.xpath("(//div[contains(@class,'xrx-fw-css-grid-row')])[2]//a"));
+		//System.out.println("No of Links Found for PdlSearchlinks: " +PdlSearchlinks.size());
+		
+		List<WebElement> PS64bitfilename=driver.findElements(By.xpath("(//li[contains(@class,'xrx-fw-downloads-panel__stat')])"));	
+		System.out.println("No of Links Found for PdlSearchlinks: " +PS64bitfilename.size());
+		
+		List<WebElement>PdlSearchlinks=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//a"));		
+		System.out.println(PdlSearchlinks.size());
+		
+		for (WebElement filename:PS64bitfilename) 
 		{
-			//System.out.println(pdllinks.getText());
-			//sSystem.out.println(pdllinks.getAttribute("aria-label"));
-			//System.out.println(pdllinks.getAccessibleName());
+			System.out.println(filename.getText());
 			
-			
-			//System.out.println("No of name Found for Pdlfilename: " +driverdetails.size());
-
-			if((pdllinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")))
-			 {			
-			  pdllinks.click();			  
-			  break;
-			  }
+			if(filename.getText().contains("Filename: UNIV_5.887.3.1_PS_x86.zip"))				
+					{
+				
+				for(WebElement pdllinks :PdlSearchlinks) 
+				{
+					System.out.println(pdllinks.getText());
+					if((pdllinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")))
+					 {			
+					  pdllinks.click();
+					  break;
+					 }
+				}break;
+					
+		}
+		
+		
+		/*
+		 * for(WebElement pdllinks :PdlSearchlinks) {
+		 * //System.out.println(pdllinks.getText());
+		 * //sSystem.out.println(pdllinks.getAttribute("aria-label"));
+		 * //System.out.println(pdllinks.getAccessibleName());
+		 * 
+		 * 
+		 * //System.out.println("No of name Found for Pdlfilename: "
+		 * +driverdetails.size());
+		 * 
+		 * if((pdllinks.getAccessibleName().
+		 * contains("More details: V3 Xerox Global Print Driver PostScript"))) {
+		 * pdllinks.click(); break; }
+		 */
 			
 		
 		}
 
-		
-		
-		
 		
 		  WebElement checkagreebox=driver.findElement(By.className("xrx-fw-terms-conditions__checkbox")); 
 		  checkagreebox.click();
@@ -75,7 +107,7 @@ public class XeroxFindElements {
 		 
 		Thread.sleep(3000);
 		
-		//driver.quit();
+		driver.quit();
 	}
 
 }

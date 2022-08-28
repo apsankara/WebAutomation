@@ -1,6 +1,6 @@
-@supportpage
-Feature: Test XeroxSupportHomePage
-  Verify the Xerox Drivers posted in support.xerox.com Homepage
+@PS_x86bit
+Feature: Test XeroxSupportHomePage for PS_x86bit
+  Verify the Xerox Drivers posted in XeroxGPDHomePage
 
   Background: XeroxSupportPage Model Search
     Given User open URL "https://www.support.xerox.com"
@@ -9,8 +9,7 @@ Feature: Test XeroxSupportHomePage
     And Click on Search button
     And Clcik on Model Search Link
     Then Validate the Model LinkPage
-    
-@PS_x86bit
+
   Scenario Outline: GPD PS_x86bit Driver Link Availability
     When SelectOS for PS_x86 <Platform>
     When SelectLanguage for PS_x86 <Language>
@@ -22,6 +21,8 @@ Feature: Test XeroxSupportHomePage
     When Get PS_x86 Driver Size <Size>
     When Get PS_x86 Driver Filename <Filename>
     When Get PS_x86 Driver Tagname <Tags>
+    When Click CheckAgreeBtn
+    When Clcik DownloadBtn
 
     Examples: 
       | Platform            | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                        |
@@ -30,3 +31,4 @@ Feature: Test XeroxSupportHomePage
       | Windows 8           | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 40.36 MB | Filename: UNIV_5.887.3.1_PS_x86.zip | Tags: GPD, PostScript, WHQL |
       | Windows 8.1         | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 40.36 MB | Filename: UNIV_5.887.3.1_PS_x86.zip | Tags: GPD, PostScript, WHQL |
       | Windows Server 2008 | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 40.36 MB | Filename: UNIV_5.887.3.1_PS_x86.zip | Tags: GPD, PostScript, WHQL |
+      | Windows 11          | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 40.36 MB | Filename: UNIV_5.887.3.1_PS_x86.zip | Tags: GPD, PostScript, WHQL |

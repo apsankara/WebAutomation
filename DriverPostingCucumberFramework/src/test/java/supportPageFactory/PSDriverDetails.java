@@ -16,7 +16,6 @@ public class PSDriverDetails {
 	// PS path value with clicking the more details link
 	public static By MoreDetails = By.xpath("/html/body/div[4]/div/div[2]/div/div/div/div[2]/div/div[2]/div/div[3]/a");
 	
-	
 	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/div/ul/li[1]")
 	WebElement Released;
 	
@@ -30,12 +29,12 @@ public class PSDriverDetails {
 	WebElement Filename;
 	
 	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/div/ul/li[5]")
-	WebElement Tags;
+	WebElement Tag;
 	
-	@FindBy(id="xrx-fw-terms-conditions__checkbox--155711")
-	WebElement Ageree;
+	@FindBy(className="xrx-fw-terms-conditions__checkbox")
+	WebElement CheckAgree;
 	
-	@FindBy(xpath="/html/body/div[4]/div/div[2]/div/div/div/div[3]/div/div/a")
+	@FindBy(xpath="//a[normalize-space()='Download']")
 	WebElement Download;
 
 	//Constructor, as every page needs a Web driver to find elements
@@ -52,15 +51,69 @@ public class PSDriverDetails {
 		String val=Released.getText();
 		if(val.contentEquals(releasedate))
 		{
-			System.out.println("Released date is successful validation" + "Expected : " + releasedate +"Actual :" +val);
+			System.out.println("Released date is successful validation " + "Expected=" + releasedate +" Actual=" +val);
 		}
 		else {
-			System.out.println("Released date is not successful validation" + "Expected : " + releasedate +"Actual :" +val);	
+			System.out.println("Released date is not successful validation " + "Expected=" + releasedate +" Actual :" +val);	
 		}
 	}		
 	
+	public void Get_Version(String version) {
+		waithelper.WaitForElement(Version, 20);
+		String val=Version.getText();
+		if(val.contentEquals(version))
+		{
+			System.out.println("Released date is successful validation " + "Expected=" + version +" Actual=" +val);
+		}
+		else {
+			System.out.println("Released date is not successful validation " + "Expected=" + version +" Actual :" +val);	
+		}
+	}	
 	
+	public void Get_Size(String size) {
+		waithelper.WaitForElement(Size, 20);
+		String val=Size.getText();
+		if(val.contentEquals(size))
+		{
+			System.out.println("Released date is successful validation " + "Expected=" + size +" Actual=" +val);
+		}
+		else {
+			System.out.println("Released date is not successful validation " + "Expected=" + size +" Actual :" +val);	
+		}
+	}		
 	
+	public void Get_Filename(String filename) {
+		waithelper.WaitForElement(Filename, 20);
+		String val=Filename.getText();
+		if(val.contentEquals(filename))
+		{
+			System.out.println("Released date is successful validation " + "Expected=" + filename +" Actual=" +val);
+		}
+		else {
+			System.out.println("Released date is not successful validation " + "Expected=" + filename +" Actual :" +val);	
+		}
+	}		
 	
+	public void Get_Tag(String tag) {
+		waithelper.WaitForElement(Tag, 20);
+		String val=Tag.getText();
+		if(val.contentEquals(tag))
+		{
+			System.out.println("Released date is successful validation " + "Expected=" + tag +" Actual=" +val);
+		}
+		else {
+			System.out.println("Released date is not successful validation " + "Expected=" + tag +" Actual :" +val);	
+		}
+	}		
 	
+	public void Get_Agree() {
+		waithelper.WaitForElement(CheckAgree, 20);
+		CheckAgree.click();
+		
+	}		
+	
+	public void Get_Download() {
+		waithelper.WaitForElement(Download, 20);
+		Download.click();
+}
 }
