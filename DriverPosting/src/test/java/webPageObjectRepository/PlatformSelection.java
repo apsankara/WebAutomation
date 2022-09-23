@@ -2,9 +2,9 @@ package webPageObjectRepository;
 
 import org.openqa.selenium.By;
 
-public class GPDPlatform {
+public class PlatformSelection {
 		
 	//platform drop down verification
-	public static By OS=By.name("platform");
+	public static By OS=By.xpath("//select[@name='platform']");
 			
 }

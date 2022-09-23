@@ -11,7 +11,8 @@ public class PSDriverAgreeBtn {
 	
 	public void PSDriverAgree() throws IOException {
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("GPDPSDriverAgree");
-		aDriver.click(PSDriverDetails.Agree, "PSDriverAgreeCheckbox");
+		//aDriver.MultipleElementSearchClick(PSDriverDetails.Agree,"More details: V3 Xerox Global Print Driver PostScript", "AgreeBtnClick");
+		aDriver.click(PSDriverDetails.Agree, "AgreeBtnClick");
 	}
 
 }

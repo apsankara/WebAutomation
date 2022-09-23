@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -15,9 +14,9 @@ import org.testng.annotations.Test;
 
 import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
-import webPageObjectRepository.GPDLanguage;
-import webPageObjectRepository.GPDPlatform;
-import webPageObjectRepository.GPDTag;
+import webPageObjectRepository.LanguageSelection;
+import webPageObjectRepository.PlatformSelection;
+import webPageObjectRepository.TagSelection;
 
 
 public class PS_x64_PlatformFunExecution {
@@ -26,13 +25,15 @@ public class PS_x64_PlatformFunExecution {
 	ActionDriver aDriver;
 	ApplyFiltersBtn aApplyFilters;
 	PSFilename_x64 aFilename_x64;
-	PSVersion aVersion;
-	PSReleasedDate aReleasedDate;
+	DriverVersion aVersion;
+	DriverReleasedDate aReleasedDate;
 	PSSize_x64 aSize_x64;
 	PSTag aTag;
 	PSDriverMoreDetailsLink aPSDriverMoreDetails;
 	PSDriverAgreeBtn aPSDriverAgree;
 	PSDriverDownloadBtn aPSDriverDownload;
+	XeroxModel aXeroxModel;
+	XeroxModelSearchLink aXeroxModelSearchLink;
 
 
 	//Constructor
@@ -41,25 +42,39 @@ public class PS_x64_PlatformFunExecution {
 		aDriver=new ActionDriver();
 		aApplyFilters=new ApplyFiltersBtn();
 		aFilename_x64 =new PSFilename_x64();
-		aVersion=new PSVersion();
-		aReleasedDate=new PSReleasedDate();
+		aVersion=new DriverVersion();
+		aReleasedDate=new DriverReleasedDate();
 		aSize_x64=new PSSize_x64();
 		aTag=new PSTag();
 		aPSDriverMoreDetails=new PSDriverMoreDetailsLink();
 		aPSDriverAgree=new PSDriverAgreeBtn();
 		aPSDriverDownload=new PSDriverDownloadBtn();
 		aHomePage=new XeroxHomePage();
+		aXeroxModel=new XeroxModel();
+		aXeroxModelSearchLink=new XeroxModelSearchLink();
+
 
 	}	
 
 	//support.xerox.com Home Page function
-	@Test(priority=1)
-	public void HomePage() throws IOException  {
-		aHomePage.HomePage();
-	}
-
+		@Test(priority=1)
+		public void HomePage() throws IOException  {
+			aHomePage.XeroxSupportPage();
+		}
+		
+		//Model Search Link in the support page
+		@Test(priority=2)
+		public void TypeXeroxModel() throws IOException  {
+			aXeroxModel.Model();
+		}
+		
+		//Model entered in the support page
+			@Test(priority=3)
+			public void ModelSearchLink() throws IOException  {
+				aXeroxModelSearchLink.ModelSearchLink();
+			}
 	//Platform, Language, Tag Selection and apply filters
-	@Test(priority=2)
+	@Test(priority=4)
 	public void PlatformSelection() throws IOException {	
 		try{		
 			//Create an object of File class to open xls file
@@ -91,9 +106,9 @@ public class PS_x64_PlatformFunExecution {
 
 					//System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() +",");
 					String Excelvalue=sheet.getRow(i).getCell(j).getStringCellValue();
-					WebElement OSSelect=driver.findElement(GPDPlatform.OS);
+					WebElement OSSelect=driver.findElement(PlatformSelection.OS);
 					StartBrowser.childTest=StartBrowser.parentTest.createNode("PlatformSelectionsAndComparisonwithEnglish");
-					aDriver.click(GPDPlatform.OS,"PlatformDropDownTag");
+					aDriver.click(PlatformSelection.OS,"PlatformDropDownTag");
 					Select OSOption=new Select(OSSelect);
 					OSOption.selectByVisibleText(Excelvalue);       		
 					StartBrowser.childTest.pass("Successfully captured the OS from Excel=" +Excelvalue);
@@ -112,8 +127,8 @@ public class PS_x64_PlatformFunExecution {
 					}  
 
 					//Language Selection        		
-					WebElement languageSelect=driver.findElement(GPDLanguage.Language);		
-					aDriver.click(GPDLanguage.Language,"LanguageDropDownTag");
+					WebElement languageSelect=driver.findElement(LanguageSelection.Language);		
+					aDriver.click(LanguageSelection.Language,"LanguageDropDownTag");
 					Select language=new Select(languageSelect);
 					language.selectByVisibleText("English (Global)");
 					String languagedropdownbox=language.getFirstSelectedOption().getText();       		
@@ -130,8 +145,8 @@ public class PS_x64_PlatformFunExecution {
 					}        		
 
 					//Tag Selection 
-					WebElement tagSelect=driver.findElement(GPDTag.Tag);		
-					aDriver.click(GPDTag.Tag,"TagDropDownTag");
+					WebElement tagSelect=driver.findElement(TagSelection.Tag);		
+					aDriver.click(TagSelection.Tag,"TagDropDownTag");
 					Select tag=new Select(tagSelect);
 					//tag.selectByVisibleText("GPD");
 					//tag.selectByValue("GPD");
@@ -153,36 +168,36 @@ public class PS_x64_PlatformFunExecution {
 					aApplyFilters.Filters();
 
 					//PSDriver more details link click  
-					aPSDriverMoreDetails.PSMoreDetails();
-
-					//PS driver ReleasedDate and comparison   
-					aReleasedDate.ReleasedDate();
-					
+					//aPSDriverMoreDetails.PSMoreDetails();
+						
 					//PS Driver version Details and Comparison       		        		
-					aVersion.Version(); 
-					
-					//PS driver Size and comparison  
-					aSize_x64.FileSize();
+					aVersion.Version();
 					
 					//PS driver FileName and comparison
 					aFilename_x64.FileName();
+					
+					//PS driver ReleasedDate and comparison   
+					aReleasedDate.ReleasedDate();
+					
+					//PS driver Size and comparison  
+					aSize_x64.FileSize();										
 
 					//PS Tag Name and comparison   
 					aTag.FileTag();
 
 					//PS Driver Agree Button
-					aPSDriverAgree.PSDriverAgree();
+					//aPSDriverAgree.PSDriverAgree();
 
 					//PS Driver Download Button
 					//aPSDriverDownload.PSDriverDownload();
 
 					//Driver navigate to back.
-					driver.navigate().back();
-					driver.navigate().refresh();
+					//driver.navigate().back();
+					//driver.navigate().refresh();
 					//java script for scroll up to get the platform tag	  
-					JavascriptExecutor js = (JavascriptExecutor)driver; 
-					js.executeScript("window.scrollBy(0,-1000)");
-					StartBrowser.childTest=StartBrowser.parentTest.createNode("URL Navigated Back to Select Another for OS-x64bit_Language_Tag");
+					//JavascriptExecutor js = (JavascriptExecutor)driver; 
+					//js.executeScript("window.scrollBy(0,-1000)");
+					StartBrowser.childTest=StartBrowser.parentTest.createNode("Back to Select Another for OS-x64bit,Language and Tag");
 					StartBrowser.childTest.pass("Selection of another OS_x64bit_English (Global)_GPD");
 
 				}            

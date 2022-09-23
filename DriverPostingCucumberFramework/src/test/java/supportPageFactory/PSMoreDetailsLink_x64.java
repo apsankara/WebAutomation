@@ -4,6 +4,7 @@ package supportPageFactory;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,24 +39,26 @@ public class PSMoreDetailsLink_x64 {
 
 	}
 
-	public void ClickPSMoreDetailsLink()
+	public void ClickPSMoreDetailsLink(String name)
 	{	
 		try {
-			List<WebElement> PSx64bitfilename=driver.findElements(By.xpath("(//li[contains(@class,'xrx-fw-downloads-panel__stat')])"));
-			//System.out.println("No of Links Found for PdlSearchlinks: " +PSx86bitfilename.size());
+			List<WebElement> PSx64bitfilename=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//li"));
+			//System.out.println("No of Links Found for PdlSearchlinks: " +PSx64bitfilename.size());
 			
-			List<WebElement>link_PSMoreDetails_x64=driver.findElements(By.xpath("//div[contains(@class,'xrx-fw-css-grid-container')]//a"));	
-			//System.out.println(link_PSMoreDetails_x86.size());
+			List<WebElement>link_PSMoreDetails_x64=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//a"));	
+			//System.out.println(link_PSMoreDetails_x64.size());
 					waithelper.WaitForElement(link_PSMoreDetails_x64, 50);	
 					for (WebElement filename:PSx64bitfilename) 						
 					{			//System.out.println(filename.getText());		
-						if(filename.getText().contains("Filename: UNIV_5.887.3.0_PS_x64.zip"))				
+						if(filename.getText().contains(name))				
 								{						
 							for(WebElement Pslinks :link_PSMoreDetails_x64) 
 							{					//System.out.println(Pslinks.getAccessibleName());	
 								if((Pslinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")))
-								 {			
-									Pslinks.click();
+								 {	
+									JavascriptExecutor jse=(JavascriptExecutor)driver;
+									jse.executeScript("arguments[0].click()", Pslinks);
+									//Pslinks.click();
 									break;
 								 }
 							}break;

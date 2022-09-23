@@ -17,8 +17,7 @@ public class GPDPlatform {
 	//platform drop down verification
 	public static By OS=By.name("platform");
 	
-	
-	@FindBy(name=("platform"))
+	@FindBy(xpath=("//select[@name='platform']"))
 	WebElement select_platform;
 	
 	public GPDPlatform (WebDriver driver){
@@ -28,7 +27,6 @@ public class GPDPlatform {
 		PageFactory.initElements(factory, this);
 		waithelper=new WaitHelper(driver);		
 	}
-	
 	
 	public void SelectPlatform(String platform) {
 		Select os=new Select(select_platform);

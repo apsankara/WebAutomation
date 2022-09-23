@@ -9,14 +9,14 @@ import org.testng.Assert;
 
 import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
-import webPageObjectRepository.GPDTag;
+import webPageObjectRepository.TagSelection;
 
-public class TagSelection {
+public class TagSelect {
 	ActionDriver aDriver=new ActionDriver();
 	WebDriver driver;
 	public void GPD() throws IOException {
 		
-		WebElement TagSelect=driver.findElement(GPDTag.Tag);
+		WebElement TagSelect=driver.findElement(TagSelection.Tag);
 		Select GPDSelect=new Select(TagSelect);
 		GPDSelect.selectByVisibleText("GPD");
 		String TagSelectdropdownbox=GPDSelect.getFirstSelectedOption().getText();

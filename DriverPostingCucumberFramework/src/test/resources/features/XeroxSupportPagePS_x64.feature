@@ -7,7 +7,7 @@ Feature: Test XeroxSupportHomePage for PS_x64bit
     Then Validate the support page displayed
     When Type Driver "Xerox Global Print Driver"
     And Click on Search button
-    And Clcik on Model Search Link
+    And Clcik on Model Search Link "Drivers & Downloads - Xerox Global Print Driver"
     Then Validate the Model LinkPage
 
   Scenario Outline: GPD PS_x64bit Driver Link Availability
@@ -15,7 +15,7 @@ Feature: Test XeroxSupportHomePage for PS_x64bit
     When SelectLanguage for PS_x64 <Language>
     When SelectTag for PS_x64 <Tag>
     And Click Apply Filters Btn_x64
-    And Click PS_x64 Driver MoreDetails Link
+    And Click PS_x64 Driver MoreDetails Link <Filename>
     When Get PS_x64 Driver ReleasedDate <Released>
     When Get PS_x64 Driver Version <Version>
     When Get PS_x64 Driver Size <Size>
@@ -24,17 +24,16 @@ Feature: Test XeroxSupportHomePage for PS_x64bit
     When Click CheckAgreeBtn
     When Clcik DownloadBtn
 
-		
     Examples: 
-      | Platform                   | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                        |
-      | Windows 10 x64             | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows 11                 | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows 7 x64              | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows 8 x64              | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows 8.1 x64            | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2008 x64    | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2012 R2 x64 | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2012 x64    | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2016 x64    | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2019 x64    | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
-      | Windows Server 2022 x64    | English (Global) | GPD | Released: 08/12/2022 | Version: 5.887.3.1 | Size: 42.35 MB | Filename: UNIV_5.887.3.1_PS_x64.zip | Tags: GPD, PostScript, WHQL |
+      | Platform                   | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                                                  |
+      | Windows 10 x64             | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows 11                 | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows 7 x64              | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows 8 x64              | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows 8.1 x64            | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2008 x64    | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2012 R2 x64 | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2012 x64    | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2016 x64    | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2019 x64    | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |
+      | Windows Server 2022 x64    | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 42.35 MB | Filename: UNIV_5.887.3.0_PS_x64.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |

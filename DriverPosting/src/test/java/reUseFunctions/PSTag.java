@@ -17,7 +17,7 @@ public class PSTag {
 ActionDriver aDriver=new ActionDriver();
 	
 	public void FileTag() throws IOException {
-	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Tag Validation For PS");
+	//StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Tag Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -39,19 +39,20 @@ ActionDriver aDriver=new ActionDriver();
     
     //Get the address in a variable
     String address= cell.getStringCellValue();
-    
+    StartBrowser.childTest.pass("Comparison of Driver Tag");
+    aDriver.MultipleElementGetText(PSDriverDetails.MoreDetails, address, "DriverValue");
     //Printing the address
     //System.out.println("Address is :"+ address);
-    String driverTag=aDriver.gettext(PSDriverDetails.Tags);		
-	  if(driverTag.equals(address))
-	  { 
-		  StartBrowser.childTest.pass(" Driver Tag Comparison is Successful "+"Actual=" +driverTag +" Expected=" +address); 
-	 }
-	  else 
-	 {
-	  StartBrowser.childTest.fail(" Driver Tag Comparison is not Successful "+"Actual=" +driverTag +" Expecte= " +address);
-	  
-	  }	  
+	/*
+	 * String driverTag=aDriver.gettext(PSDriverDetails.Tags);
+	 * if(driverTag.equals(address)) {
+	 * StartBrowser.childTest.pass(" Driver Tag Comparison is Successful "+"Actual="
+	 * +driverTag +" Expected=" +address); } else {
+	 * StartBrowser.childTest.fail(" Driver Tag Comparison is not Successful "
+	 * +"Actual=" +driverTag +" Expecte= " +address);
+	 * 
+	 * }
+	 */  
     
 }
 }

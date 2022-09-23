@@ -8,7 +8,7 @@ public class JavaScriptExe {
 	
 	//Flashing Element
 	public static void flashByJs(WebElement element, WebDriver driver) {
-		JavascriptExecutor js=((JavascriptExecutor) driver);
+		//JavascriptExecutor js=((JavascriptExecutor) driver);
 		String bgcolor=element.getCssValue("backgroundColor");
 		for(int i=0;i<10;i++) {
 			changeColor("#000000",element, driver);//1

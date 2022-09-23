@@ -1,7 +1,45 @@
 Automations notes from sankar
 
+
+(//input[@id='xrx-fw-terms-conditions__checkbox--155710'])[1]
+
+(//input[@id='xrx-fw-terms-conditions__checkbox--155708'])[1]
+
+(//span[contains(@class,'xrx-fw-terms-conditions__text')][normalize-space()='I agree to the'])[2]
+(//span[contains(@class,'xrx-fw-terms-conditions__text')][normalize-space()='I agree to the'])[1]
+
+GPD-PS//label[@for='xrx-fw-terms-conditions__checkbox--155710']//span[@class='xrx-fw-terms-conditions__text'][normalize-space()='I agree to the']
+GPD-PCL6//label[@for='xrx-fw-terms-conditions__checkbox--155708']//span[@class='xrx-fw-terms-conditions__text'][normalize-space()='I agree to the']
+
+//label[@for='xrx-fw-terms-conditions__checkbox--155709']//span[@class='xrx-fw-terms-conditions__text'][normalize-space()='I agree to the']
+
+(//input[@id='xrx-fw-terms-conditions__checkbox--155711'])[1]
+
+(//a[@aria-label='Download: V3 Xerox Global Print Driver PCL6'])[1]
+//a[@aria-label='Download: V3 Xerox Global Print Driver PCL6']
+//a[@aria-label='Download: V3 Xerox Global Print Driver PostScript']
+
+Important
+"Xerox Global Print Driver"
+"Drivers & Downloads - Xerox Global Print Driver"
+
+"VersaLink C7130"
+"Drivers & Downloads - VersaLink C7120/C7125/C7130 Color Multifunction Printer"
+
+"Filename: UNIV_5.887.3.0_PS_x86.zip"
+
+"More details: V3 Xerox Global Print Driver PostScript"
+
+
+"More details: V3 Xerox Global Print Driver PostScript"
+
+
 https://www.youtube.com/c/pavanoltraining
 
+
+else {
+					StartBrowser.childTest.fail("Comparison is not Successful Actual:"+textname +" Expected:"+llinks.getText());
+				}
 
 getText
 More details...
@@ -50,6 +88,8 @@ Download: V3 Xerox Global Print Driver PostScript
 Installation Guide
 null
 
+
+Drivers & Downloads - Xerox Global Print Driver
 
 Win10-64bit
 Pcl6---//a[@name='&lid=more-details-155709']

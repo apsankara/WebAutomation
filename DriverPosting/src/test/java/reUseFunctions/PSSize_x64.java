@@ -17,7 +17,6 @@ public class PSSize_x64 {
 ActionDriver aDriver=new ActionDriver();
 	
 	public void FileSize() throws IOException {
-	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver FileSize Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -42,16 +41,9 @@ ActionDriver aDriver=new ActionDriver();
     
     //Printing the address
    // System.out.println("Address is :"+ address);
-    String driverSize=aDriver.gettext(PSDriverDetails.Size);		
-	  if(driverSize.equals(address))
-	  { 
-		  StartBrowser.childTest.pass(" Driver Size Comparison is Successful "+"Actual=" +driverSize +" Expected=" +address); 
-	 }
-	  else 
-	 {
-	  StartBrowser.childTest.fail(" Driver Size Comparison is not Successful "+"Actual=" +driverSize +" Expected=" +address);
-	  
-	  }	  
+    StartBrowser.childTest.pass("Comparison of Driver Size_x64");
+    aDriver.MultipleElementGetText(PSDriverDetails.MoreDetails, address, "DriverValue");
+    
     
 }
 }

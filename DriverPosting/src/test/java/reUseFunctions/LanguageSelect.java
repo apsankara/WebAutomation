@@ -9,17 +9,17 @@ import org.testng.Assert;
 
 import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
-import webPageObjectRepository.GPDLanguage;
+import webPageObjectRepository.LanguageSelection;
 
-public class LanguageSelection {
+public class LanguageSelect {
 	ActionDriver aDriver=new ActionDriver();
 	WebDriver driver;
 
 	public void EnglishGlobal() throws IOException {
 		
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("Language Selection and Comparison");
-		WebElement languageSelect=driver.findElement(GPDLanguage.Language);		
-		aDriver.click(GPDLanguage.Language,"LanguageDropDownTag");
+		WebElement languageSelect=driver.findElement(LanguageSelection.Language);		
+		aDriver.click(LanguageSelection.Language,"LanguageDropDownTag");
 		Select language=new Select(languageSelect);
 		language.selectByVisibleText("English (Global)");
 		String languagedropdownbox=language.getFirstSelectedOption().getText();

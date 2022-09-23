@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 
@@ -97,16 +97,18 @@ try {
 	public void MultipleElementSearchClick(By Locator, String linkname, String eleName) throws IOException 
 	{
 		try {
-			StartBrowser.childTest=StartBrowser.parentTest.createNode("ModelSearchLink Clicked: ");
 			List<WebElement>Searchlinks=driver.findElements(Locator);
+			//List<WebElement>filename=driver.findElements(Locator2);
 			//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
 			for(WebElement llinks :Searchlinks) 
 			{
-				//System.out.println(modellinks.getText());
+				//System.out.println(llinks.getText());
 				if(llinks.getText().contains(linkname))
 				{
-					llinks.click();
-					StartBrowser.childTest.pass("ModelSearchLink Clicked: " +linkname);
+					JavascriptExecutor jse = (JavascriptExecutor)driver;
+					jse.executeScript("arguments[0].click()", llinks);
+					//llinks.click();
+					StartBrowser.childTest.pass("SearchLink Clicked: " +linkname);
 					break;
 				}
 			}
@@ -118,28 +120,54 @@ try {
 		}
 		
 }
+	//Model search in list of web elements
+	public void MultipleElementGetText(By Locator, String textname, String eleName) throws IOException 
+	{
+		try {			
+			List<WebElement>SearchTextName=driver.findElements(Locator);
+			//List<WebElement>filename=driver.findElements(Locator2);
+			//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
+			for(WebElement llinks :SearchTextName) 
+			{
+				//System.out.println(llinks.getText());
+				if(llinks.getText().contains(textname))
+				{
+					//Assert.assertEquals(textname, "");
+					StartBrowser.childTest.pass("Driver Value Comparison is Successful Actual:"+textname +" Expected:" +llinks.getText());
+					break;
+				}				
+			}
+			}catch(Exception ex){
+				StartBrowser.childTest.fail("Unable to Capture the details ", 
+						MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+				StartBrowser.childTest.info(ex);
+				throw ex;
+		}
+		
+}
 	
 	//Model search in list of web elements //not used for any where
-		public void PSMoreDetails() throws IOException 
+		public void MoreDetailsClick(By Locator1, By Locator2, String filename, String linkname) throws IOException 
 		{
 			try {
-				List<WebElement>PSMoreDetailslinks=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//a"));
+				List<WebElement> PS64bitfilename=driver.findElements(Locator1);	
 				//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
-				List<WebElement> PS64bitfilename=driver.findElements(By.xpath("(//li[contains(@class,'xrx-fw-downloads-panel__stat')])"));	
-				
-				for (WebElement filename:PS64bitfilename) 
+				List<WebElement>PSMoreDetailslinks=driver.findElements(Locator2);
+				for (WebElement filename1:PS64bitfilename) 
 				{
 					
-					if(filename.getText().contains("Filename: UNIV_5.887.3.0_PS_x64.zip"))				
+					if(filename1.getText().contains(filename))				
 							{						
 						for(WebElement Pslinks :PSMoreDetailslinks) 
 						{						
-							if((Pslinks.getText().contains("More details: V3 Xerox Global Print Driver PostScript")))
-							 {			
-								Pslinks.click();
-								
+							if((filename1.getText().contains(filename))&&(Pslinks.getText().contains(linkname)))
+							 {	
+								JavascriptExecutor jse = (JavascriptExecutor)driver;
+								jse.executeScript("arguments[0].click()", Pslinks);
+								//Pslinks.click();
+								StartBrowser.childTest.pass("SearchLink Clicked: " +linkname);
 							 }
-						}
+						}break;
 							}
 				}
 				}catch(Exception ex){

@@ -9,7 +9,6 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 
-
 import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
 import webPageObjectRepository.PSDriverDetails;
@@ -18,7 +17,7 @@ public class PSFilename_x64 extends PSDriverDetails{
 	ActionDriver aDriver=new ActionDriver();
 	
 	public void FileName() throws IOException {
-	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Filename Validation For PS");
+	//StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver Filename Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -43,16 +42,18 @@ public class PSFilename_x64 extends PSDriverDetails{
     
     //Printing the address
     //System.out.println("Address is :"+ address);
-    String driverFilename=aDriver.gettext(PSDriverDetails.Filename);		
-	  if(driverFilename.equals(address))
-	  { 
-		  StartBrowser.childTest.pass(" Driver Filename Comparison is Successful "+"Actual=" +driverFilename +" Expected=" +address); 
-	 }
-	  else 
-	 {
-	  StartBrowser.childTest.fail(" Driver filename Comparison is not Successful "+"Actual=" +driverFilename +" Expected=" +address);
-	  
-	  }	  
+	/*
+	 * String driverFilename=aDriver.gettext(PSDriverDetails.Filename);
+	 * if(driverFilename.equals(address)) {
+	 * StartBrowser.childTest.pass(" Driver Filename Comparison is Successful "
+	 * +"Actual=" +driverFilename +" Expected=" +address); } else {
+	 * StartBrowser.childTest.fail(" Driver filename Comparison is not Successful "
+	 * +"Actual=" +driverFilename +" Expected=" +address);
+	 * 
+	 * }
+	 */ 
+    StartBrowser.childTest.pass("Comparison of Driver FileName_x64");
+    aDriver.MultipleElementGetText(PSDriverDetails.MoreDetails, address, "DriverValue");
     
 }
 	

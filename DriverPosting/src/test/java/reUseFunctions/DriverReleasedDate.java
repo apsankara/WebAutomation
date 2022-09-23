@@ -13,11 +13,10 @@ import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
 import webPageObjectRepository.PSDriverDetails;
 
-public class PSReleasedDate {
+public class DriverReleasedDate {
 ActionDriver aDriver=new ActionDriver();
 	
 	public void ReleasedDate() throws IOException {
-	StartBrowser.childTest=StartBrowser.parentTest.createNode("Driver ReleasedDate Validation For PS");
 	//Create an object of File class to open xlsx file
     File file =    new File("TestData/TestData.xls");
     
@@ -39,19 +38,22 @@ ActionDriver aDriver=new ActionDriver();
     
     //Get the address in a variable
     String address= cell.getStringCellValue();
-    
+    StartBrowser.childTest.pass("Comparison of Driver Released Date");
+    aDriver.MultipleElementGetText(PSDriverDetails.MoreDetails, address, "DriverValue");
+   
     //Printing the address
     //System.out.println("Address is :"+ address);
-    String driverReleased=aDriver.gettext(PSDriverDetails.Released);		
-	  if(driverReleased.equals(address))
-	  { 
-		  StartBrowser.childTest.pass(" Driver ReleasedDate Comparison is Successful "+"Actual=" +driverReleased +" Expected=" +address); 
-	 }
-	  else 
-	 {
-	  StartBrowser.childTest.fail(" Driver ReleasedDate Comparison is not Successful "+"Actual=" +driverReleased +" Expected=" +address);
-	  
-	  }	  
+	/*
+	 * String driverReleased=aDriver.gettext(PSDriverDetails.Released);
+	 * if(driverReleased.equals(address)) {
+	 * StartBrowser.childTest.pass(" Driver ReleasedDate Comparison is Successful "
+	 * +"Actual=" +driverReleased +" Expected=" +address); } else {
+	 * StartBrowser.childTest.
+	 * fail(" Driver ReleasedDate Comparison is not Successful "+"Actual="
+	 * +driverReleased +" Expected=" +address);
+	 * 
+	 * }
+	 */ 
     
 }
 }

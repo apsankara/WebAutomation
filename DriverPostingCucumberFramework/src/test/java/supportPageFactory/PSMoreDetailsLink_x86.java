@@ -3,6 +3,7 @@ package supportPageFactory;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -18,10 +19,10 @@ public class PSMoreDetailsLink_x86 {
 
 		// PS path value with clicking the more details link
 		// PS path value with clicking the more details link
-		//@FindBy(xpath="//div[@class='xrx-fw-css-grid-row']//a")
-		//List<WebElement> link_PSMoreDetails_x86;		
-		//@FindBy(xpath="(//li[contains(@class,'xrx-fw-downloads-panel__stat')])")
-		//List<WebElement> PSx86bitfilename;
+		@FindBy(xpath="//div[@class='xrx-fw-css-grid-row']//a")
+		List<WebElement> link_PSMoreDetails_x86;		
+		@FindBy(xpath="//div[@class='xrx-fw-css-grid-row']//li")
+		List<WebElement> PSx86bitfilename;
 		
 	@FindBy(xpath="//h1[normalize-space()='V3 Xerox Global Print Driver PostScript']")
 	WebElement Validate_PSMoreDestails_x86;
@@ -36,30 +37,28 @@ public class PSMoreDetailsLink_x86 {
 		waithelper=new WaitHelper(driver);
 	}
 
-	public void ClickPSMoreDetailsLink() {
+	public void ClickPSMoreDetailsLink(String name) {
 		try {
-			List<WebElement> PSx86bitfilename=driver.findElements(By.xpath("(//li[contains(@class,'xrx-fw-downloads-panel__stat')])"));
+			List<WebElement> PSx86bitfilename=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//li"));
 			//System.out.println("No of Links Found for PdlSearchlinks: " +PSx86bitfilename.size());
 			
-			List<WebElement>link_PSMoreDetails_x86=driver.findElements(By.xpath("//div[contains(@class,'xrx-fw-css-grid-container')]//a"));	
-			//div[@class='xrx-fw-css-grid-row']//a
-			//System.out.println(link_PSMoreDetails_x86.size());
+			List<WebElement>link_PSMoreDetails_x86=driver.findElements(By.xpath("//div[@class='xrx-fw-css-grid-row']//a"));	
+			//System.out.println("No of Links Found for PdlSearchlinks: " +link_PSMoreDetails_x86.size());
 			
 					waithelper.WaitForElement(link_PSMoreDetails_x86, 50);	
-					for (WebElement filename:PSx86bitfilename) 
-						
-					{			//System.out.println(filename.getText());		
-						if(filename.getText().contains("Filename: UNIV_5.887.3.1_PS_x86.zip"))				
-								{						
+					for (WebElement filename:PSx86bitfilename) 						
+					{						//System.out.println(filename.getText());									
 							for(WebElement Pslinks :link_PSMoreDetails_x86) 
-							{					//System.out.println(Pslinks.getAccessibleName());	
-								if((Pslinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")))
-								 {			
-									Pslinks.click();
+							{					//System.out.println(Pslinks.getText());	
+								if((filename.getText().contains(name))&&(Pslinks.getAccessibleName().contains("More details: V3 Xerox Global Print Driver PostScript")) )
+								 {	
+									JavascriptExecutor jse=(JavascriptExecutor)driver;
+									jse.executeScript("arguments[0].click()", Pslinks);
+									//Pslinks.click();
 									break;
 								 }
-							} break;
-								}
+							}
+								
 					}				
 			}catch(StaleElementReferenceException ex){
 				

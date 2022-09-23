@@ -47,9 +47,9 @@ public class GPD_PS_English_Execution extends BaseClass {
 		String br=configprop.getProperty("browser");
 
 		if(br.equals("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			//String ProjectPath="C:\\SeleniumSetup\\chromedriver_win32\\chromedriver.exe";		
-			//System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");		
+			System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");		
 			driver = new ChromeDriver();		
 			driver.manage().window().maximize();	
 			logger.info("################# Open Chrome Browser #################");
@@ -101,9 +101,9 @@ public class GPD_PS_English_Execution extends BaseClass {
 		cSupportPage.BtnSearch();
 	}
 
-	@And("Clcik on Model Search Link")
-	public void clcik_on_model_search_link() {
-		cSupportPage.ModelSearchLink();
+	@And("Clcik on Model Search Link {string}")
+	public void clcik_on_model_search_link(String modelLink) {
+		cSupportPage.ModelSearchLink(modelLink);
 		logger.info("################# Clciked on Model Search Link #################");						
 	}		
 
@@ -141,7 +141,6 @@ public class GPD_PS_English_Execution extends BaseClass {
 		cGPDLanguage.SelectLanguage(language);
 	}
 	
-	
 
 	@When("SelectTag for PS_x86 (.*)$")
 	public void selectTag_for_ps_x86(String tag) {
@@ -172,19 +171,19 @@ public class GPD_PS_English_Execution extends BaseClass {
 	}
 	
 	
-	@And("Click PS_x86 Driver MoreDetails Link")
-	public void click_ps_x86_driver_more_details_link() {		
+	@And("Click PS_x86 Driver MoreDetails Link (.*)$")
+	public void click_ps_x86_driver_more_details_link(String name) {		
 		logger.info("################# PS Driver MoreDetails Link #################" );
 		cPSMoreDetailsLink_x86=new PSMoreDetailsLink_x86(driver);
-		cPSMoreDetailsLink_x86.ClickPSMoreDetailsLink();
+		cPSMoreDetailsLink_x86.ClickPSMoreDetailsLink(name);
 		cPSMoreDetailsLink_x86.ValidatePSMoreDetails();
 	}
 	
-	@And("Click PS_x64 Driver MoreDetails Link")
-	public void click_ps_x64_driver_more_details_link() {
+	@And("Click PS_x64 Driver MoreDetails Link (.*)$")
+	public void click_ps_x64_driver_more_details_link(String name) {
 		logger.info("################# PS_x64bit Driver MoreDetails Link #################");
 		cPSMoreDetailsLink_x64=new PSMoreDetailsLink_x64(driver);
-		cPSMoreDetailsLink_x64.ClickPSMoreDetailsLink();
+		cPSMoreDetailsLink_x64.ClickPSMoreDetailsLink(name);
 		cPSMoreDetailsLink_x64.ValidatePSMoreDetails();
 	}
 

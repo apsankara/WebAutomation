@@ -1,8 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="WebPosting">
   <test thread-count="5" name="Test">
     <classes>
     <class name="script.TC0_PS_X64_Exeution"/>
-      <class name="script.TC0_PS_X86_Exeution"/>     
+      <class name="script.TC1_PS_X86_Exeution"/> 
+      <class name="script.TC3_PCL6_X86_Exeution"/> 
+      <class name="script.TC2_PCL6_X64_Exeution"/>          
     </classes>
   </test> <!-- Test -->
 </suite> <!-- WebPosting -->

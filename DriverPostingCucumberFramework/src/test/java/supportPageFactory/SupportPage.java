@@ -3,6 +3,7 @@ package supportPageFactory;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -56,17 +57,19 @@ public class SupportPage {
 		btn_ModelSearch.click();
 	}
 
-	public void ModelSearchLink() {
+	public void ModelSearchLink(String modellinkname) {
 		try {
 		//List<WebElement>ModelSearchlinks=driver.findElements(By.xpath("//div[@class='coveo-result-list-container coveo-list-layout-container']//a"));
-		waithelper.WaitForElement(ModelSearchlinks, 50);
 		//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
 		for(WebElement modellinks :ModelSearchlinks) 
 		{
 			//System.out.println(modellinks.getText());
-			if(modellinks.getText().contains("Drivers & Downloads - Xerox Global Print Driver"))
+			waithelper.WaitForElement(ModelSearchlinks, 50);
+			if(modellinks.getText().contains(modellinkname))
 			{
-				modellinks.click();
+				JavascriptExecutor jse = (JavascriptExecutor)driver;
+				jse.executeScript("arguments[0].click()", modellinks);
+				//modellinks.click();
 				break;
 			}
 		}
@@ -80,6 +83,7 @@ public class SupportPage {
 		if(val.contains("Xerox Global Print Driver"))
 		{
 			System.out.println("GPD Page shown successfully " + "Expected=Xerox Global Print Driver "+"Actual=" +val);
+			
 		}
 		else {
 			System.out.println("GPD Page is not shown successfully " +"Expected=Xerox Global Print Driver "+"Actual=" +val);

@@ -10,7 +10,7 @@
 
   <name>DriverPosting</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://www.support.xerox.com/</url>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,9 +24,10 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>6.14.3</version>
-    <!--<scope>test</scope>-->
+    <version>7.6.1</version>
+    <scope>test</scope>
 </dependency>
+
 
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server -->
 <dependency>
