@@ -31,7 +31,7 @@ public class PS_x86_PlatformFunExecution {
 	PSTag aTag;
 	PSDriverMoreDetailsLink aPSDriverMoreDetails;
 	PSDriverAgreeBtn aPSDriverAgree;
-	PSDriverDownloadBtn aPSDriverDownload;
+	PS_x86_DriverDownloadBtn aPSDriverDownload;
 	XeroxModel aXeroxModel;
 	XeroxModelSearchLink aXeroxModelSearchLink;
 
@@ -48,7 +48,7 @@ public class PS_x86_PlatformFunExecution {
 		aTag=new PSTag();
 		aPSDriverMoreDetails=new PSDriverMoreDetailsLink();
 		aPSDriverAgree=new PSDriverAgreeBtn();
-		aPSDriverDownload=new PSDriverDownloadBtn();
+		aPSDriverDownload=new PS_x86_DriverDownloadBtn();
 		aHomePage=new XeroxHomePage();
 		aXeroxModel=new XeroxModel();
 		aXeroxModelSearchLink=new XeroxModelSearchLink();

@@ -42,8 +42,9 @@ ActionDriver aDriver=new ActionDriver();
     
     //Printing the address
     //System.out.println("Address is :"+ address);
-    StartBrowser.childTest=StartBrowser.parentTest.createNode("Enter Xerox Driver Model SearchLink");
+    StartBrowser.childTest=StartBrowser.parentTest.createNode("Click Xerox Driver Model SearchLink");
     aDriver.MultipleElementSearchClick(ModelLinkPage.SearchLink,address,"SerchLinkClick");
-    StartBrowser.childTest.pass("Successfully Clicked Driver Model SearchLink name: " +address);
+    //aDriver.click(ModelLinkPage.SearchLink1, address);
+    StartBrowser.childTest.pass("Successfully Clicked Driver Model SearchLink Name: " +address);
 }
 }

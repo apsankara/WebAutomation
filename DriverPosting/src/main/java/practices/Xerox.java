@@ -49,6 +49,8 @@ public class Xerox {
 				WebElement OSSelect=driver.findElement(By.xpath("//select[@name='platform']"));
 				Select OSOption=new Select(OSSelect);
 				OSOption.selectByVisibleText("Windows 10");
+				
+				
 				driver.findElement(By.xpath("/html/body/div[4]/div/div[2]/div/div/form/div/div[4]/button")).click();
 				
 								try {

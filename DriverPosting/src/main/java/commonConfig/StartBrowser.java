@@ -47,22 +47,24 @@ public class StartBrowser {
 	//Launch WebBrowser for test automation
 	@BeforeClass
 	  public void lanchBrowser() {
-		  
-		  //WebDriverManager.chromedriver().setup();
+		 
 		  System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");
 		  driver= new ChromeDriver();
 		  driver.manage().window().maximize();
-		  driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		  driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
 		  //driver.get("https://www.support.xerox.com/en-us/product/global-printer-driver/downloads" );
 		  //driver.get("https://www.support.xerox.com/");
 	  }
 
 	//Close the Browser
-	  @AfterClass
-	  public void closeBrowser() {
-		  driver.quit();
-		  extent.flush();
+	
+	  @AfterClass 
+	  public void closeBrowser() 
+	  { 
+		  driver.quit(); 
+	  extent.flush(); 
 	  }
+	 
 
 }

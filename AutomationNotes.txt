@@ -1,5 +1,15 @@
 Automations notes from sankar
+boolean flag = false;
+		    File dir = new File("C:/Users/labadmin/Downloads/");
+		    File[] dir_contents = dir.listFiles();
+		  	    
+		    for (int i = 0; i < dir_contents.length; i++) {
+		        if (dir_contents[i].getName().equals("UNIV_5.887.3.0_PS_x64.zip"))
+		            return flag=true;
+		        StartBrowser.childTest.pass("Download FileChecked Successfully");
+		            }
 
+		    return flag;
 
 (//input[@id='xrx-fw-terms-conditions__checkbox--155710'])[1]
 

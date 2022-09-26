@@ -44,7 +44,7 @@ ActionDriver aDriver=new ActionDriver();
     //System.out.println("Address is :"+ address);
     StartBrowser.childTest=StartBrowser.parentTest.createNode("Enter Xerox Driver Model");
     aDriver.type(XeroxSupportPage.DriverSearchBox, address, "Model");
-    StartBrowser.childTest.pass("Successfully Entered Driver Model name: " +address);
+    StartBrowser.childTest.pass("Successfully Entered Driver Model Name: " +address);
     aDriver.click(XeroxSupportPage.DriverSearchBtn,"DriverSearchButton");
 }
 }

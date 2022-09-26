@@ -1,7 +1,9 @@
 package webDriverCmd;
 
 
+import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -11,6 +13,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.FluentWait;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
 
@@ -23,8 +26,9 @@ public class ActionDriver {
 	
 	public ActionDriver() {
 		
-		driver=StartBrowser.driver;
+		driver=StartBrowser.driver;		
 	}
+		
 //driver navigation to application site
 	public void navigateToApplication(String Url) throws IOException {
 		
@@ -63,6 +67,32 @@ try {
 		
 	}
 	
+	//Model search in list of web elements
+	public void MultipleElementSearchClick(By Locator, String linkname, String eleName) throws IOException 
+	{
+		try {
+			List<WebElement>Searchlinks=driver.findElements(Locator);		
+			System.out.println("No of Links Found for ModelSearchlinks: " +Searchlinks.size());
+			for(WebElement links :Searchlinks) 
+			{
+				System.out.println(links.getText());
+				if(links.getText().contains(linkname))
+				{
+					JavascriptExecutor jse = (JavascriptExecutor)driver;
+					jse.executeScript("arguments[0].click()", links);
+					//links.click();
+					StartBrowser.childTest.pass("SearchLink Clicked: " +linkname);
+					break;
+				}
+			}
+			}catch(Exception ex){
+				StartBrowser.childTest.fail("Unable to Capture the details ", 
+						MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+				StartBrowser.childTest.info(ex);
+				throw ex;
+		}
+		
+}
 //WebDriver command for sending the values
 	
 	public void type(By Locator, String text, String eleName) throws IOException {
@@ -93,33 +123,6 @@ try {
 		
 	}
 	
-	//Model search in list of web elements
-	public void MultipleElementSearchClick(By Locator, String linkname, String eleName) throws IOException 
-	{
-		try {
-			List<WebElement>Searchlinks=driver.findElements(Locator);
-			//List<WebElement>filename=driver.findElements(Locator2);
-			//System.out.println("No of Links Found for GPD_ModelSearchlinks: " +ModelSearchlinks.size());
-			for(WebElement llinks :Searchlinks) 
-			{
-				//System.out.println(llinks.getText());
-				if(llinks.getText().contains(linkname))
-				{
-					JavascriptExecutor jse = (JavascriptExecutor)driver;
-					jse.executeScript("arguments[0].click()", llinks);
-					//llinks.click();
-					StartBrowser.childTest.pass("SearchLink Clicked: " +linkname);
-					break;
-				}
-			}
-			}catch(Exception ex){
-				StartBrowser.childTest.fail("Unable to Capture the details ", 
-						MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
-				StartBrowser.childTest.info(ex);
-				throw ex;
-		}
-		
-}
 	//Model search in list of web elements
 	public void MultipleElementGetText(By Locator, String textname, String eleName) throws IOException 
 	{
@@ -195,15 +198,38 @@ try {
 		}
 	}
 
+	//delete the downloaded file in the directory
+	public boolean isFileDownloaded(String downloadPath, String fileName) {
+		  File dir = new File(downloadPath);
+		  File[] dirContents = dir.listFiles();
+
+		  for (int i = 0; i < dirContents.length; i++) {
+		      if (dirContents[i].getName().equals(fileName)) {
+		          // File has been found, it can now be deleted:
+		          dirContents[i].delete();
+		          StartBrowser.childTest.pass("File has been found,Existing Downloaded File Deleted");
+		          return true;
+		          
+		      }
+		          }
+		  	StartBrowser.childTest.pass("File Does not Exits to Delete");
+		      return false;
+		  }
 	
-	//Drop down selection method	
 	
+		
 //Capturing the screenshots for failed test cases	
 public String screenShot() {
 	return ((TakesScreenshot)driver) .getScreenshotAs(OutputType.BASE64);
 }
 
 
+  //Wait time for driver to download for upto 4 min 
+public void DownlodWaitTime(String path) { File file = new File(path);
+  FluentWait<WebDriver> wait = new
+  FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(50)).
+  pollingEvery(Duration.ofMillis(200000)); wait.until( x -> file.exists()); }
+ 
 
 	}
 	
