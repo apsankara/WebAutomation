@@ -1,4 +1,25 @@
 Automations notes from sankar
+
+
+if(isFileExists("C:/Users/labadmin/Downloads/UNIV_5.887.3.0_PS_x86.zip")) {
+				StartBrowser.childTest.pass("Downloaded File Exits-UNIV_5.887.3.0_PS_x86.zip");
+			}else {
+				
+				StartBrowser.childTest.fail("Downloaded File not Exits");
+			}	
+
+static boolean isFileExists(String Path) {
+		File dir = new File(Path);
+		if(dir.exists()) {
+			return true;
+		}
+		else {
+		return false;
+		}
+	}
+
+
+
 boolean flag = false;
 		    File dir = new File("C:/Users/labadmin/Downloads/");
 		    File[] dir_contents = dir.listFiles();

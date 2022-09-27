@@ -19,36 +19,36 @@ import webPageObjectRepository.PlatformSelection;
 import webPageObjectRepository.TagSelection;
 
 
-public class PCL6_x64_PlatformFunExecution {
+public class PCL6_x64_DriverDownloadFun {
 	WebDriver driver;
 	XeroxHomePage aHomePage;
 	ActionDriver aDriver;
 	ApplyFiltersBtn aApplyFilters;
-	PSFilename_x64 aFilename_x64;
+	PCL6Filename_x64 aFilename_x64;
 	DriverVersion aVersion;
 	DriverReleasedDate aReleasedDate;
 	PCL6Size_x64 aSize_x64;
 	PCL6Tag aTag;
-	PCL6DriverMoreDetailsLink aPSDriverMoreDetails;
-	PCL6DriverAgreeBtn aPSDriverAgree;
-	PCL6_x86_DriverDownloadBtn aPSDriverDownload;
+	PCL6DriverMoreDetailsLink aPCL6DriverMoreDetails;
+	PCL6DriverAgreeBtn aPCL6DriverAgree;
+	PCL6_x64_DriverDownloadBtn aPCL6_x64_DriverDownload;
 	XeroxModel aXeroxModel;
 	XeroxModelSearchLink aXeroxModelSearchLink;
 
 
 	//Constructor
-	public  PCL6_x64_PlatformFunExecution() {
+	public  PCL6_x64_DriverDownloadFun() {
 		driver=StartBrowser.driver;
 		aDriver=new ActionDriver();
 		aApplyFilters=new ApplyFiltersBtn();
-		aFilename_x64 =new PSFilename_x64();
+		aFilename_x64 =new PCL6Filename_x64();
 		aVersion=new DriverVersion();
 		aReleasedDate=new DriverReleasedDate();
 		aSize_x64=new PCL6Size_x64();
 		aTag=new PCL6Tag();
-		aPSDriverMoreDetails=new PCL6DriverMoreDetailsLink();
-		aPSDriverAgree=new PCL6DriverAgreeBtn();
-		aPSDriverDownload=new PCL6_x86_DriverDownloadBtn();
+		aPCL6DriverMoreDetails=new PCL6DriverMoreDetailsLink();
+		aPCL6DriverAgree=new PCL6DriverAgreeBtn();
+		aPCL6_x64_DriverDownload=new PCL6_x64_DriverDownloadBtn();
 		aHomePage=new XeroxHomePage();
 		aXeroxModel=new XeroxModel();
 		aXeroxModelSearchLink=new XeroxModelSearchLink();
@@ -76,7 +76,7 @@ public class PCL6_x64_PlatformFunExecution {
 
 	//Platform, Language, Tag Selection and apply filters
 	@Test(priority=4)
-	public void PlatformSelection() throws IOException {	
+	public void PlatformSelection() throws Exception {	
 		try{		
 			//Create an object of File class to open xls file
 			File file =    new File("TestData/TestData.xls");
@@ -89,7 +89,7 @@ public class PCL6_x64_PlatformFunExecution {
 			HSSFWorkbook workbook=new HSSFWorkbook(inputStream);
 
 			//creating a Sheet object
-			HSSFSheet sheet=workbook.getSheet("Platform_x64");
+			HSSFSheet sheet=workbook.getSheet("Download_x64");
 
 			//get all rows in the sheet
 			int rowCount=sheet.getLastRowNum()-sheet.getFirstRowNum();
@@ -151,17 +151,17 @@ public class PCL6_x64_PlatformFunExecution {
 					Select tag=new Select(tagSelect);
 					//tag.selectByVisibleText("GPD");
 					//tag.selectByValue("GPD");
-					tag.selectByIndex(1);
+					tag.selectByIndex(3);
 					String tagdropdownbox=tag.getFirstSelectedOption().getText();       		
 
-					if(tagdropdownbox.equals("GPD"))
+					if(tagdropdownbox.equals("PCL"))
 					{ 
-						Assert.assertEquals(tagdropdownbox, "GPD");
-						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual=" +tagdropdownbox +" Expected=GPD"); 
+						Assert.assertEquals(tagdropdownbox, "PCL");
+						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual=" +tagdropdownbox +" Expected=PCL"); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual=" +tagdropdownbox +" Expected=GPD");
+						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual=" +tagdropdownbox +" Expected=PCL");
 
 					}      
 
@@ -187,19 +187,19 @@ public class PCL6_x64_PlatformFunExecution {
 					aTag.FileTag();
 
 					//PS Driver Agree Button
-					//aPSDriverAgree.PSDriverAgree();
+					aPCL6DriverAgree.PCL6DriverAgree();
 
 					//PS Driver Download Button
-					//aPSDriverDownload.PSDriverDownload();
-
+					aPCL6_x64_DriverDownload.PCL6_x64_DriverDownload();
+					
 					//Driver navigate to back.
 					//driver.navigate().back();
 					//driver.navigate().refresh();
 					//java script for scroll up to get the platform tag	  
 					//JavascriptExecutor js = (JavascriptExecutor)driver; 
 					//js.executeScript("window.scrollBy(0,-1000)");
-					StartBrowser.childTest=StartBrowser.parentTest.createNode("Back to Select Another for OS-x64bit,Language and Tag");
-					StartBrowser.childTest.pass("Selection of another OS_x64bit_English (Global)_GPD");
+					//StartBrowser.childTest=StartBrowser.parentTest.createNode("Back to Select Another for OS-x64bit,Language and Tag");
+					//StartBrowser.childTest.pass("Selection of another OS_x64bit_English (Global)_GPD");
 
 				}            
 			}

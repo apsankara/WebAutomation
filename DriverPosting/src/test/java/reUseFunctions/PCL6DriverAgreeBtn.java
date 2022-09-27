@@ -4,15 +4,15 @@ import java.io.IOException;
 
 import commonConfig.StartBrowser;
 import webDriverCmd.ActionDriver;
-import webPageObjectRepository.PSDriverDetails;
+import webPageObjectRepository.PCL6DriverDetails;
 
 public class PCL6DriverAgreeBtn {
 	ActionDriver aDriver=new ActionDriver();
 	
-	public void PSDriverAgree() throws IOException {
+	public void PCL6DriverAgree() throws IOException {
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("GPDPSDriverAgree");
 		//aDriver.MultipleElementSearchClick(PSDriverDetails.Agree,"More details: V3 Xerox Global Print Driver PostScript", "AgreeBtnClick");
-		aDriver.click(PSDriverDetails.PDLAgree, "PCLAgreeBtnClick");
+		aDriver.click(PCL6DriverDetails.PDLAgree, "PCLAgreeBtnClick");
 	}
 
 }

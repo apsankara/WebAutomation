@@ -1,7 +1,6 @@
 package reUseFunctions;
 
 import java.awt.AWTException;
-import java.io.File;
 import java.io.IOException;
 
 
@@ -16,25 +15,9 @@ public class PS_x86_DriverDownloadBtn {
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("GPDPSDriverDownload");
 			aDriver.isFileDownloaded("C:/Users/labadmin/Downloads", "UNIV_5.887.3.0_PS_x86.zip");
 			aDriver.click(PSDriverDetails.Download, "PSDriverDownloadButton");
-			aDriver.DownlodWaitTime("C:/Users/labadmin/Downloads/UNIV_5.887.3.0_PS_x86.zip");
-			
-			if(isFileExists("C:/Users/labadmin/Downloads/UNIV_5.887.3.0_PS_x86.zip")) {
-				StartBrowser.childTest.pass("Downloaded File Exits-UNIV_5.887.3.0_PS_x86.zip");
-			}else {
-				
-				StartBrowser.childTest.fail("Downloaded File not Exits");
-			}				
+			aDriver.DownlodWaitTime("C:/Users/labadmin/Downloads/UNIV_5.887.3.0_PS_x86.zip");	
+			aDriver.isFileNameCheck("C:/Users/labadmin/Downloads", "UNIV_5.887.3.0_PS_x86.zip", "CheckDownloadedFileAvailable");
 		
-	}
-	
-	static boolean isFileExists(String Path) {
-		File dir = new File(Path);
-		if(dir.exists()) {
-			return true;
-		}
-		else {
-		return false;
-		}
 	}
 	
 }	

@@ -31,7 +31,7 @@ public class PCL6_x86_PlatformFunExecution {
 	PCL6Tag aTag;
 	PSDriverMoreDetailsLink aPSDriverMoreDetails;
 	PCL6DriverAgreeBtn aPSDriverAgree;
-	PCL6DriverDownloadBtn aPSDriverDownload;
+	PCL6_x86_DriverDownloadBtn aPSDriverDownload;
 	XeroxModel aXeroxModel;
 	XeroxModelSearchLink aXeroxModelSearchLink;
 
@@ -47,7 +47,7 @@ public class PCL6_x86_PlatformFunExecution {
 		aTag=new PCL6Tag();
 		aPSDriverMoreDetails=new PSDriverMoreDetailsLink();
 		aPSDriverAgree=new PCL6DriverAgreeBtn();
-		aPSDriverDownload=new PCL6DriverDownloadBtn();
+		aPSDriverDownload=new PCL6_x86_DriverDownloadBtn();
 		aHomePage=new XeroxHomePage();
 		aXeroxModel=new XeroxModel();
 		aXeroxModelSearchLink=new XeroxModelSearchLink();

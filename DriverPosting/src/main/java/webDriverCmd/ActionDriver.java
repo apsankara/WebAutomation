@@ -72,10 +72,10 @@ try {
 	{
 		try {
 			List<WebElement>Searchlinks=driver.findElements(Locator);		
-			System.out.println("No of Links Found for ModelSearchlinks: " +Searchlinks.size());
+			//System.out.println("No of Links Found for ModelSearchlinks: " +Searchlinks.size());
 			for(WebElement links :Searchlinks) 
 			{
-				System.out.println(links.getText());
+				//System.out.println(links.getText());
 				if(links.getText().contains(linkname))
 				{
 					JavascriptExecutor jse = (JavascriptExecutor)driver;
@@ -216,6 +216,26 @@ try {
 		      return false;
 		  }
 	
+	public void isFileNameCheck(String downloadpath, String filename, String elename) throws IOException {
+		try {
+		File file=new File(downloadpath);
+		File[] totalfiles=file.listFiles();
+		
+		for(File list:totalfiles) {
+			if(list.getName().contains(filename)) {
+				StartBrowser.childTest.pass("File has been found FileName=" +filename);
+				break;
+			}
+		}
+		}
+		catch(Exception ex) {
+			StartBrowser.childTest.fail("Successfully not Performed the Action :" + elename, 
+					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
+			StartBrowser.childTest.info(ex);
+			throw ex;
+			
+		}
+	}
 	
 		
 //Capturing the screenshots for failed test cases	
@@ -225,12 +245,12 @@ public String screenShot() {
 
 
   //Wait time for driver to download for upto 4 min 
-public void DownlodWaitTime(String path) { File file = new File(path);
-  FluentWait<WebDriver> wait = new
-  FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(50)).
-  pollingEvery(Duration.ofMillis(200000)); wait.until( x -> file.exists()); }
+public void DownlodWaitTime(String path) 
+{ 
+	File file = new File(path);
+  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(900)).
+  pollingEvery(Duration.ofMillis(30000)); wait.until( x -> file.exists()); }
  
-
 	}
-	
+
 
