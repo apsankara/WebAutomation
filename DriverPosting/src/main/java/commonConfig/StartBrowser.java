@@ -34,6 +34,8 @@ public class StartBrowser {
 		htmlreporter=new ExtentHtmlReporter("Reports/MyResult.html");
 		extent=new ExtentReports();
 		extent.attachReporter(htmlreporter);
+		htmlreporter.config().setDocumentTitle("Automation Report");
+		htmlreporter.config().setReportName("Xerox Driver Posting");
 	}
 	
 	

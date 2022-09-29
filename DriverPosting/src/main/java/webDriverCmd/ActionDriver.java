@@ -16,6 +16,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.FluentWait;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
+import com.aventstack.extentreports.Status;
 
 import commonConfig.StartBrowser;
 
@@ -34,12 +35,13 @@ public class ActionDriver {
 		
 		try {
 			driver.get(Url);
-			String pageTitle=driver.getTitle();
-			
+			String pageTitle=driver.getTitle();			
 			if(pageTitle.equalsIgnoreCase("Product Support and Drivers – Xerox")){
 				StartBrowser.childTest.pass("Successfully Navigated to xerox website: " +Url);
+				//Assert.assertEquals(pageTitle, "Product Support and Drivers – Xerox");
 			}else {
 				driver.navigate().refresh();
+				StartBrowser.childTest.log(Status.INFO, "After Refresh URL opened");
 			}						
 			
 		}catch(Exception ex) {
@@ -98,9 +100,9 @@ try {
 	public void type(By Locator, String text, String eleName) throws IOException {
 		try {
 	driver.findElement(Locator).sendKeys(text);
-	StartBrowser.childTest.pass("Successfully Typed Text: " + eleName+ "" + text);	
+	StartBrowser.childTest.pass("Successfully Typed Text: " + eleName+ " " + text);	
 		}catch(Exception ex) {
-			StartBrowser.childTest.fail("Unable to type the text :" + eleName + "" + text, 
+			StartBrowser.childTest.fail("Unable to type the text :" + eleName + " " + text, 
 					MediaEntityBuilder.createScreenCaptureFromBase64String(screenShot()).build());
 			StartBrowser.childTest.info(ex);
 			throw ex;
@@ -169,6 +171,7 @@ try {
 								jse.executeScript("arguments[0].click()", Pslinks);
 								//Pslinks.click();
 								StartBrowser.childTest.pass("SearchLink Clicked: " +linkname);
+								StartBrowser.childTest.log(Status.PASS, "SearchLink Clicked");
 							 }
 						}break;
 							}
