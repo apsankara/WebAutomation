@@ -1,0 +1,12 @@
+2022-10-12 04:38:56INFO  BasicConfiguratorExamples:16 - This is info
+2022-10-12 04:38:56WARN  BasicConfiguratorExamples:17 - This is Warning
+2022-10-12 04:38:56ERROR BasicConfiguratorExamples:18 - This is Error
+2022-10-12 04:38:56FATAL BasicConfiguratorExamples:19 - This is Fatal
+2022-10-12 04:39:33INFO  BasicConfiguratorExamples:16 - This is info
+2022-10-12 04:39:33WARN  BasicConfiguratorExamples:17 - This is Warning
+2022-10-12 04:39:33ERROR BasicConfiguratorExamples:18 - This is Error
+2022-10-12 04:39:33FATAL BasicConfiguratorExamples:19 - This is Fatal
+2022-10-12 04:40:36INFO  BasicConfiguratorExamples:16 - This is info
+2022-10-12 04:40:36WARN  BasicConfiguratorExamples:17 - This is Warning
+2022-10-12 04:40:36ERROR BasicConfiguratorExamples:18 - This is Error
+2022-10-12 04:40:36FATAL BasicConfiguratorExamples:19 - This is Fatal
