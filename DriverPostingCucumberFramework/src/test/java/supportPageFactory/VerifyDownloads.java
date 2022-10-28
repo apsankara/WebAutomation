@@ -1,10 +1,13 @@
 package supportPageFactory;
 
 import java.io.File;
+import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
+import org.openqa.selenium.support.ui.FluentWait;
 
 import utilities.WaitHelper;
 
@@ -36,25 +39,38 @@ public class VerifyDownloads {
 		      return false;
 		  }
 	
-	public static void waitUntilFileToDownload(String folderLocation, String filename) throws InterruptedException {
-        File directory = new File(folderLocation);
-        boolean downloadinFilePresence = false;
-        File[] filesList =null;
-        LOOP:   
-            while(true) {
-                filesList =  directory.listFiles();
-                for (File file : filesList) {
-                    downloadinFilePresence = file.getName().contains(filename);
-                }
-                if(downloadinFilePresence) {
-                    for(;downloadinFilePresence;) {
-                        Thread.sleep(10000);
-                        continue LOOP;
-                    }
-                }else {
-                    break;
-                }
-            }
-    }
+	public void isFileNameCheck(String downloadpath, String filename, String elename) throws IOException {
+		try {
+		File file=new File(downloadpath);
+		File[] totalfiles=file.listFiles();
+		
+		for(File list:totalfiles) {
+			if(list.getName().contains(filename)) {				
+				break;
+			}
+		}
+		}
+		catch(Exception ex) {			
+			throw ex;
+			
+		}
+	}
 	
-}
+	
+	
+	public void DownlodWaitTime(String path) 
+	{ 
+		File file = new File(path);
+	  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(900)).
+	  pollingEvery(Duration.ofMillis(30000)); wait.until( x -> file.exists());
+	  }
+	 
+		
+
+    }
+    
+    
+
+
+
+	

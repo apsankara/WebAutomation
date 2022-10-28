@@ -251,8 +251,9 @@ public String screenShot() {
 public void DownlodWaitTime(String path) 
 { 
 	File file = new File(path);
-  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(900)).
-  pollingEvery(Duration.ofMillis(30000)); wait.until( x -> file.exists()); }
+  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofMinutes(5)).
+  pollingEvery(Duration.ofSeconds(20)); 
+  wait.until( x -> file.exists()); }
  
 	}
 

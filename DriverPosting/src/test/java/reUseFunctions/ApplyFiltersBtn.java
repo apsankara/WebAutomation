@@ -12,6 +12,7 @@ ActionDriver aDriver=new ActionDriver();
 	
 	public void Filters() throws IOException {
 		StartBrowser.childTest=StartBrowser.parentTest.createNode("Clicked ApplyFiltersButton");
-		aDriver.click(ApplyFilters.applyfilters, "ApplyFiltersButton");		
+		aDriver.click(ApplyFilters.applyfilters, "ApplyFiltersButton");	
+		
 	}
 }

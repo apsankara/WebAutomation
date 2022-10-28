@@ -1,6 +1,71 @@
 Automations notes from sankar
 
 
+pm.sendRequest("https://www.support.xerox.com/", function (err, response) {
+if(response.code!=201){
+    console.error("Health Check Failed-Server is Down!")
+    throw new error("Server is Down!")
+}
+    console.log(response.json());
+});
+
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+
+pm.test("Checked and Validated that Driver Verion=5.887.3.0 is Available", ()=>{
+    pm.expect(pm.response.text()).to.include(pm.iterationData.get("PS_Version"))
+});
+
+console.log(pm.iterationData.get("PS_Version"))
+
+pm.test("Checked and Validated that Driver Released Date=06/23/2022 is Available", ()=>{
+    pm.expect(pm.response.text()).to.include(pm.iterationData.get("PS_ReleasedDate"))   
+});
+
+console.log(pm.iterationData.get("PS_ReleasedDate"))
+
+pm.test("Checked and Validated that Driver Size=42.35 MB is Available", ()=>{
+    pm.expect(pm.response.text()).to.include(pm.iterationData.get("PS_Size"))
+});
+
+console.log(pm.iterationData.get("PS_Size"))
+
+pm.test("Checked and Validated that Driver File Name=UNIV_5.887.3.0_PS_x64.zip is Available", ()=>{
+    pm.expect(pm.response.text()).to.include(pm.iterationData.get("PS_Filename"))
+});
+console.log(pm.iterationData.get("PS_Filename"))
+
+pm.test("Checked and Validated that Driver Tags=GPD, Package-Aware, PostScript, V3 Driver, WHQL is Available", ()=>{
+    pm.expect(pm.response.text()).to.include(pm.iterationData.get("PS_Tags"))
+});
+console.log(pm.iterationData.get("PS_Tags"))
+
+
+
+platform:win10x64
+language:en
+
+Released: 06/23/2022
+Version: 5.887.3.0
+Size: 40.36 MB
+Filename: UNIV_5.887.3.0_PS_x86.zip
+Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL
+
+
+Released: 06/23/2022
+Version: 5.887.3.0
+Size: 42.39 MB
+Filename: UNIV_5.887.3.0_PCL6_x64.zip
+Tags: GPD, PCL, Package-Aware, V3 Driver, WHQL
+
+
+
+https://www.youtube.com/playlist?list=PLLS0D9-W-1dl9-im-IqH7z2-qjBTsMPIg
+
+{{GPDBaseURL}}{{platform}}{{language}}
+
 if(isFileExists("C:/Users/labadmin/Downloads/UNIV_5.887.3.0_PS_x86.zip")) {
 				StartBrowser.childTest.pass("Downloaded File Exits-UNIV_5.887.3.0_PS_x86.zip");
 			}else {
