@@ -24,7 +24,6 @@ public class FindElements {
 		WebElement searchbox=driver.findElement(By.xpath("//input[@id='small-searchterms']"));
 		searchbox.sendKeys("Sankara");
 
-
 		//findElements ==>return a multiple WebElements
 		List<WebElement>links=driver.findElements(By.xpath("//div[@class='footer-block information']//a"));
 		System.out.println(links.size());
@@ -36,11 +35,6 @@ public class FindElements {
 				break;
 			}
 		}
-
-
-
-
-
 		//driver.quit();
 	}
 

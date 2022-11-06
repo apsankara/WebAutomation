@@ -6,6 +6,8 @@ import java.io.IOException;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -19,7 +21,7 @@ import webPageObjectRepository.PlatformSelection;
 import webPageObjectRepository.TagSelection;
 
 
-public class PS_x64_PlatformFunExecution {
+public class PS_x64_Language_Link_Verification {
 	WebDriver driver;
 	XeroxHomePage aHomePage;
 	ActionDriver aDriver;
@@ -34,10 +36,11 @@ public class PS_x64_PlatformFunExecution {
 	PS_x64_DriverDownloadBtn aPSDriverDownload;
 	XeroxModel aXeroxModel;
 	XeroxModelSearchLink aXeroxModelSearchLink;
+	SinglePlatformSelection aSinglePlatformSelect;
 
 
 	//Constructor
-	public  PS_x64_PlatformFunExecution() {
+	public  PS_x64_Language_Link_Verification() {
 		driver=StartBrowser.driver;
 		aDriver=new ActionDriver();
 		aApplyFilters=new ApplyFiltersBtn();
@@ -52,31 +55,31 @@ public class PS_x64_PlatformFunExecution {
 		aHomePage=new XeroxHomePage();
 		aXeroxModel=new XeroxModel();
 		aXeroxModelSearchLink=new XeroxModelSearchLink();
-
+		aSinglePlatformSelect=new SinglePlatformSelection();
 
 	}	
 
 	//support.xerox.com Home Page function
-		@Test(priority=1)
-		public void HomePage() throws IOException  {
-			aHomePage.XeroxSupportPage();
-		}
-		
-		//Model Search Link in the support page
-		@Test(priority=2,dependsOnMethods="HomePage",alwaysRun=false)
-		public void TypeXeroxModel() throws IOException  {
-			aXeroxModel.Model();
-		}
-		
-		//Model entered in the support page
-			@Test(priority=3)
-			public void ModelSearchLink() throws IOException  {
-				aXeroxModelSearchLink.ModelSearchLink();
-			}
-			
+	@Test(priority=1)
+	public void HomePage() throws IOException  {
+		aHomePage.XeroxSupportPage();
+	}
+
+	//Model Search Link in the support page
+	@Test(priority=2,dependsOnMethods="HomePage",alwaysRun=false)
+	public void TypeXeroxModel() throws IOException  {
+		aXeroxModel.Model();
+	}
+
+	//Model entered in the support page
+	@Test(priority=3)
+	public void ModelSearchLink() throws IOException  {
+		aXeroxModelSearchLink.ModelSearchLink();
+	}
+
 	//Platform, Language, Tag Selection and apply filters
 	@Test(priority=4)
-	public void PlatformSelection() throws IOException {	
+	public void LanguageSelection() throws IOException {	
 		try{		
 			//Create an object of File class to open xls file
 			File file =    new File("TestData/TestData.xls");
@@ -89,7 +92,7 @@ public class PS_x64_PlatformFunExecution {
 			HSSFWorkbook workbook=new HSSFWorkbook(inputStream);
 
 			//creating a Sheet object
-			HSSFSheet sheet=workbook.getSheet("Platform_x64");
+			HSSFSheet sheet=workbook.getSheet("Language");
 
 			//get all rows in the sheet
 			int rowCount=sheet.getLastRowNum()-sheet.getFirstRowNum();
@@ -107,79 +110,80 @@ public class PS_x64_PlatformFunExecution {
 
 					//System.out.print(sheet.getRow(i).getCell(j).getStringCellValue() +",");
 					String Excelvalue=sheet.getRow(i).getCell(j).getStringCellValue();
-					WebElement OSSelect=driver.findElement(PlatformSelection.OS);
-					StartBrowser.childTest=StartBrowser.parentTest.createNode("PlatformSelectionsAndComparisonwithEnglish");
-					aDriver.click(PlatformSelection.OS,"PlatformDropDownTag");
-					Select OSOption=new Select(OSSelect);
-					OSOption.selectByVisibleText(Excelvalue);       		
-					StartBrowser.childTest.pass("Successfully captured the OS from Excel=" +Excelvalue);
-					String osdropdownbox=OSOption.getFirstSelectedOption().getText();
-					StartBrowser.childTest.pass("Successfully captured the OS form WebPage=" +osdropdownbox);
+					WebElement LanSelect=driver.findElement(LanguageSelection.Language);
+					StartBrowser.childTest=StartBrowser.parentTest.createNode(Excelvalue +" Language Selection and Verification");
+					aDriver.click(LanguageSelection.Language,"LanguageDropDownTag");
+					Select LanguageOption=new Select(LanSelect);
+					LanguageOption.selectByVisibleText(Excelvalue);       		
+					StartBrowser.childTest.pass("Successfully captured the Language from Excel=" +Excelvalue);
+					String Languagedropdownbox=LanguageOption.getFirstSelectedOption().getText();
+					StartBrowser.childTest.pass("Successfully captured the OS form WebPage=" +Languagedropdownbox);
 
-					if(Excelvalue.equals(osdropdownbox))
+					if(Excelvalue.equals(Languagedropdownbox))
 					{ 
-						Assert.assertEquals(osdropdownbox, Excelvalue);
-						StartBrowser.childTest.pass("OS Selection and Comparison is Successful "+"Actual=" +Excelvalue +" Expected="+osdropdownbox); 
+						Assert.assertEquals(Languagedropdownbox, Excelvalue);
+						StartBrowser.childTest.pass("Language Selection and Comparison is Successful "+"Actual=" +Excelvalue +" Expected="+Languagedropdownbox); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("OS Selection and Comparison is not Successful "+"Actual=" +Excelvalue +" Expected="+osdropdownbox);
-
+						StartBrowser.childTest.fail("Language Selection and Comparison is not Successful "+"Actual=" +Excelvalue +" Expected="+Languagedropdownbox);										
+						TakesScreenshot ts=((TakesScreenshot)driver); 
+						File src=ts.getScreenshotAs(OutputType.FILE);
+						File location=new File(".\\ScreenShots\\Platform.png");					
+						org.apache.commons.io.FileUtils.copyFile(src, location);
 					}  
 
-					//Language Selection        		
-					WebElement languageSelect=driver.findElement(LanguageSelection.Language);		
-					aDriver.click(LanguageSelection.Language,"LanguageDropDownTag");
-					Select language=new Select(languageSelect);
-					language.selectByVisibleText("English (Global)");
-					String languagedropdownbox=language.getFirstSelectedOption().getText();       		
-
-					if(languagedropdownbox.equals("English (Global)"))
+					//Single OS selection
+					StartBrowser.childTest=StartBrowser.parentTest.createNode("PlatformSelections");
+					WebElement OSSelect=driver.findElement(PlatformSelection.OS);
+					aDriver.click(PlatformSelection.OS,"PlatformDropDownTag");
+					Select OSOption=new Select(OSSelect);
+					OSOption.selectByVisibleText("Windows 11");
+					String val=OSOption.getFirstSelectedOption().getText();
+					if(val.equals("Windows 11"))
 					{ 
-						Assert.assertEquals(languagedropdownbox, "English (Global)");
-						StartBrowser.childTest.pass("Language and Selection Comparison is Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)"); 
+						Assert.assertEquals(val, "Windows 11");
+						StartBrowser.childTest.pass("OS Selection and Comparison is Successful "+"Actual=" +val +" Expected=Windows 11"); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("Language Selection and Comparison is not Successful "+"Actual=" +languagedropdownbox +" Expected=English (Global)");
+						StartBrowser.childTest.fail("OS Selection and Comparison is not Successful "+"Actual=" +val +" Expected=Windows 11");
 
-					}        		
-
+					}  
 					//Tag Selection 
+					StartBrowser.childTest=StartBrowser.parentTest.createNode("Tag Selection");
 					WebElement tagSelect=driver.findElement(TagSelection.Tag);		
 					aDriver.click(TagSelection.Tag,"TagDropDownTag");
 					Select tag=new Select(tagSelect);
 					//tag.selectByVisibleText("GPD");
 					//tag.selectByValue("GPD");
-					tag.selectByIndex(1);
+					tag.selectByIndex(4);
 					String tagdropdownbox=tag.getFirstSelectedOption().getText();       		
 
-					if(tagdropdownbox.equals("GPD"))
+					if(tagdropdownbox.equals("PostScript"))
 					{ 
-						Assert.assertEquals(tagdropdownbox, "GPD");
-						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual=" +tagdropdownbox +" Expected=GPD"); 
+						Assert.assertEquals(tagdropdownbox, "PostScript");
+						StartBrowser.childTest.pass("Tag Selection and Comparison is Successful "+"Actual=" +tagdropdownbox +" Expected=PostScript"); 
 					}
 					else 
 					{
-						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual=" +tagdropdownbox +" Expected=GPD");
+						StartBrowser.childTest.fail("Tag Selection and Comparison is not Successful "+"Actual=" +tagdropdownbox +" Expected=PostScript");
 
-					}      
-
+					}   
+					
+					
 					//Apply Filters button
 					aApplyFilters.Filters();
 
-					//PSDriver more details link click  
-					//aPSDriverMoreDetails.PSMoreDetails();
-						
 					//PS Driver version Details and Comparison       		        		
 					aVersion.Version();
-					
+
 					//PS driver FileName and comparison
 					aFilename_x64.FileName();
-					
+
 					//PS driver ReleasedDate and comparison   
 					aReleasedDate.ReleasedDate();
-					
+
 					//PS driver Size and comparison  
 					aSize_x64.FileSize();										
 
@@ -192,29 +196,17 @@ public class PS_x64_PlatformFunExecution {
 					//PS Driver Download Button
 					//aPSDriverDownload.PSDriverDownload();
 
-					//Driver navigate to back.
-					//driver.navigate().back();
-					//driver.navigate().refresh();
-					//java script for scroll up to get the platform tag	  
-					//JavascriptExecutor js = (JavascriptExecutor)driver; 
-					//js.executeScript("window.scrollBy(0,-1000)");
 					StartBrowser.childTest=StartBrowser.parentTest.createNode("Back to Select Another for OS-x64bit,Language and Tag");
-					StartBrowser.childTest.pass("Selection of another OS_x64bit_English (Global)_GPD");
+					StartBrowser.childTest.pass("Selection of another Language_Windows_x64_GPD");
+				}
+			}            
 
-				}            
-			}
 		}catch(Exception ex)
 		{
 			StartBrowser.childTest.fail("Selection is not Successful due to incorrect value or something wrong");
 			StartBrowser.childTest.info(ex);
-			throw ex;
+			throw ex;				
 		}   
-	}	
-
-
-
-
-
-
-
+	}
 }
+
