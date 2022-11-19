@@ -28,7 +28,6 @@ public class OperatorsExample {
 		//works between two boolean
 		boolean x=true;
 		boolean y=false;
-		System.out.println(x&&y);//false
 		System.out.println(x||y);//true
 		System.out.println(!x);//false
 		
