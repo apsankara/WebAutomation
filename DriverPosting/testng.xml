@@ -1,11 +1,17 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="WebPosting">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-    <class name="script.TC0_PS_X64_Exeution"/>
-      <class name="script.TC1_PS_X86_Exeution"/> 
-      <class name="script.TC3_PCL6_X86_Exeution"/> 
-      <class name="script.TC2_PCL6_X64_Exeution"/>          
+      <class name="testCases.TC8_PS_Language_Link_Verification"/>
+      <class name="testCases.TC5_PS_X86_Download"/>
+      <class name="testCases.TC6_PCL6_X64_Download"/>
+      <class name="testCases.TC3_PCL6_X86_Exeution"/>
+      <class name="testCases.TC0_PS_X64_Exeution"/>
+      <class name="testCases.TC2_PCL6_X64_Exeution"/>
+      <class name="testCases.TC4_PS_X64_Download"/>
+      <class name="testCases.TC7_PCL6_X86_Download"/>
+      <class name="testCases.TC1_PS_X86_Exeution"/>
     </classes>
   </test> <!-- Test -->
-</suite> <!-- WebPosting -->
+</suite> <!-- Suite -->
