@@ -3,7 +3,6 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="testCases.TC8_PS_Language_Link_Verification"/>
       <class name="testCases.TC5_PS_X86_Download"/>
       <class name="testCases.TC6_PCL6_X64_Download"/>
       <class name="testCases.TC3_PCL6_X86_Exeution"/>
