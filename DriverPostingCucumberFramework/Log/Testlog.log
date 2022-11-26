@@ -678,3 +678,573 @@
 2022-08-28 13:36:50,385 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
 2022-08-28 13:36:50,499 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
 2022-08-28 13:36:50,705 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:06:03,785 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:06:04,023 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:06:14,262 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-21 00:06:14,264 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-21 00:06:14,678 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-21 00:06:20,685 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-21 00:06:20,687 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-21 00:06:20,738 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-21 00:06:20,934 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-21 00:06:21,064 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-21 00:06:21,203 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-21 00:06:22,193 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-21 00:06:24,084 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-21 00:06:24,160 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-21 00:06:24,207 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-21 00:06:24,262 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-21 00:06:24,314 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-21 00:06:24,365 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-21 00:06:24,462 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-21 00:06:24,988 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:06:27,149 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:06:27,151 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:06:34,512 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-21 00:06:34,514 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-21 00:06:34,781 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-21 00:06:41,842 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-21 00:06:41,843 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-21 00:06:41,876 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-21 00:06:42,029 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-21 00:06:42,116 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-21 00:06:42,203 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-21 00:08:43,737 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-21 00:08:59,847 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:09:02,508 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:09:02,593 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:10:03,025 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:10:03,035 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:10:07,034 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-21 00:10:07,036 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-21 00:10:07,432 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-21 00:10:13,060 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-21 00:10:13,061 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-21 00:10:13,115 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-21 00:10:13,240 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-21 00:10:13,328 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-21 00:10:13,414 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-21 00:10:18,079 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-21 00:11:15,906 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:11:17,626 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:11:17,627 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:11:28,417 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:11:35,570 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-21 00:11:35,819 - Driver Posting -INFO - ################# Open URL #################
+2022-11-21 00:11:42,207 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-21 00:11:42,209 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-21 00:11:42,726 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-21 00:11:48,957 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-21 00:11:48,959 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-21 00:11:48,988 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-21 00:11:49,192 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-21 00:11:49,280 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-21 00:11:49,375 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-21 00:11:50,662 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-21 00:26:43,587 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:26:43,749 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:26:43,900 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:26:44,107 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-21 00:26:44,272 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:31:16,488 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:31:26,656 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:31:26,662 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:32:40,020 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:32:40,022 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:32:41,632 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:32:54,502 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:32:54,507 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:32:54,557 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:32:54,933 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:32:55,071 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:32:55,209 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:33:15,190 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:33:25,172 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:33:25,793 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:33:25,841 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:33:25,898 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:33:25,943 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:33:26,025 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:33:26,154 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:33:26,545 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:33:43,599 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:33:43,601 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:33:51,799 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:33:51,801 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:33:52,094 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:34:01,143 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:34:01,144 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:34:01,171 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:34:01,350 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:34:01,442 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:34:01,538 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:34:02,438 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:34:04,382 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:34:04,431 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:34:04,477 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:34:04,520 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:34:04,573 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:34:04,620 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:34:04,703 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:34:04,908 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:34:07,664 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:34:07,666 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:34:14,014 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:34:14,014 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:34:14,471 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:34:21,145 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:34:21,146 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:34:21,196 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:34:21,410 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:34:21,503 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:34:21,586 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:34:22,590 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:34:24,056 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:34:24,101 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:34:24,148 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:34:24,194 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:34:24,241 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:34:24,287 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:34:24,379 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:34:24,651 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:34:27,470 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:34:27,471 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:34:35,097 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:34:35,098 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:34:35,433 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:34:42,132 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:34:42,133 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:34:42,164 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:34:42,485 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:34:42,570 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:34:42,653 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:34:46,775 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:34:48,043 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:34:48,088 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:34:48,132 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:34:48,184 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:34:48,228 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:34:48,273 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:34:48,365 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:34:48,617 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:42:55,184 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:42:55,200 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:43:01,297 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:43:01,297 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:43:01,778 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:43:09,835 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:43:09,836 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:43:09,873 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:43:10,009 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:43:10,100 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:43:10,189 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:43:11,456 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:43:13,147 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:43:13,198 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:43:13,246 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:43:13,295 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:43:13,350 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:43:13,401 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:43:13,488 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:43:13,773 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:43:15,367 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:43:15,368 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:43:19,805 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:43:19,805 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:43:20,075 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:43:24,897 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:43:24,899 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:43:24,945 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:43:46,227 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:43:46,241 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:43:51,358 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:43:51,359 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:43:51,683 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:43:57,137 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:43:57,137 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:43:57,179 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:43:57,304 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:43:57,405 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:43:57,492 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:43:58,663 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:44:00,228 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:44:00,303 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:44:00,354 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:44:00,405 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:44:00,454 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:44:00,511 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:44:00,609 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:44:00,903 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:44:02,456 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:44:02,473 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:44:06,619 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:44:06,620 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:44:06,933 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:44:12,357 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:44:12,361 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:44:12,401 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:44:12,571 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:44:12,660 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:44:12,748 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:44:13,342 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:44:14,881 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:44:14,932 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:44:14,979 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:44:15,028 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:44:15,075 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:44:15,123 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:44:15,229 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:44:15,515 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:44:17,165 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:44:17,167 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:44:20,617 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:44:20,618 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:44:20,893 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:44:25,837 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:44:25,840 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:44:25,886 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:44:26,077 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:44:26,170 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:44:26,261 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:44:27,132 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:44:28,592 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:44:28,646 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:44:28,693 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:44:28,738 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:44:28,788 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:44:28,837 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:44:28,923 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:44:29,134 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:44:30,899 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:44:31,011 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:44:35,442 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:44:35,443 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:44:35,716 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:44:40,972 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:44:40,990 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:44:41,067 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:44:41,285 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:44:41,373 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:44:41,458 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:44:44,680 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:45:34,975 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:45:36,663 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:45:36,664 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:45:41,443 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:45:41,444 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:45:41,723 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:45:46,973 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:45:46,974 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:45:47,005 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:45:47,275 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:45:47,365 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:45:47,461 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:45:52,001 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:45:53,875 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:45:53,924 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:45:53,973 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:45:54,020 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:45:54,067 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:45:54,112 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:45:54,195 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:45:54,638 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:46:25,959 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:46:25,981 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:46:29,905 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:46:29,907 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:46:30,264 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:46:39,688 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:46:39,691 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:46:39,734 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:46:39,885 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:46:39,997 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:46:40,102 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:46:41,116 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:46:42,635 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:46:42,687 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:46:42,737 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:46:42,793 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:46:42,845 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:46:42,893 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:46:42,999 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:46:43,266 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:46:45,196 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:46:45,196 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:46:54,093 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:46:54,094 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:46:54,391 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:47:20,837 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:47:20,841 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:47:20,895 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:47:21,079 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:47:21,167 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:47:21,250 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:47:22,303 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:47:24,371 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:47:24,417 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:47:24,469 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:47:24,516 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:47:24,568 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:47:24,629 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:47:24,711 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:47:24,952 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:47:26,570 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:47:26,571 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:47:30,562 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:47:30,565 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:47:30,845 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:47:37,975 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:47:37,976 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:47:38,027 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:47:38,265 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:47:38,367 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:47:38,494 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:47:39,219 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:47:41,113 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:47:41,175 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:47:41,230 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:47:41,276 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:47:41,333 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:47:41,374 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:47:41,453 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:47:41,683 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:47:45,683 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:47:45,684 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:47:52,875 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:47:52,876 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:47:53,179 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:47:58,733 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:47:58,734 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:47:58,762 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:47:59,006 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:47:59,103 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:47:59,197 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:47:59,884 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:48:01,679 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:48:01,728 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:48:01,778 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:48:01,832 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:48:01,882 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:48:01,929 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:48:02,011 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:48:02,312 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:48:04,099 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:48:04,102 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:48:11,060 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:48:11,060 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:48:11,381 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:48:17,423 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:48:17,424 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:48:17,462 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:48:18,021 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:48:18,092 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:48:18,171 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:48:19,273 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:48:20,929 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:48:20,976 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:48:21,025 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:48:21,078 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:48:21,127 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:48:21,172 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:48:21,256 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:48:21,674 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:50:24,340 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:50:24,351 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:50:33,043 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:50:33,045 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:50:33,987 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:50:40,835 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:50:40,836 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:50:40,866 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:50:41,237 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:50:41,326 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:50:41,441 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:50:44,166 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:50:45,772 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:50:45,823 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:50:45,880 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:50:45,934 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:50:45,983 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:50:46,023 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:50:46,106 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:50:48,035 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:50:52,775 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:50:52,970 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:50:58,211 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:50:58,212 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:50:58,496 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:51:03,802 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:51:03,803 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:51:03,831 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:51:04,009 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:51:04,138 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:51:04,258 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:51:05,600 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:51:09,780 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:51:09,826 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:51:09,874 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:51:09,919 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:51:09,968 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:51:10,014 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:51:10,130 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:51:10,456 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:51:12,222 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:51:12,223 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:51:21,313 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:51:21,314 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:51:21,589 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:51:27,102 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:51:27,103 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:51:27,139 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:51:27,340 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:51:27,466 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:51:27,601 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:51:29,718 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:51:31,781 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:51:31,830 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:51:31,877 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:51:31,921 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:51:32,012 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:51:32,060 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:51:32,141 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:51:33,293 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:51:39,453 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:51:39,455 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:51:42,824 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:51:42,824 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:51:43,146 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:51:48,696 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:51:48,697 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:51:48,758 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:51:49,028 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:51:49,157 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:51:49,233 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:51:50,808 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:51:52,251 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:51:52,299 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:51:52,340 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:51:52,399 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:51:52,467 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:51:52,515 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:51:52,589 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:51:53,342 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 18:51:55,348 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 18:51:55,350 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 18:52:00,974 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 18:52:00,975 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 18:52:01,383 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 18:52:10,453 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 18:52:10,453 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 18:52:10,479 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 18:52:10,793 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 18:52:10,919 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 18:52:11,000 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 18:52:11,946 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 18:52:13,829 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 18:52:13,876 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 18:52:13,918 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 18:52:13,980 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 18:52:14,018 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 18:52:14,056 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 18:52:14,135 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 18:52:14,336 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 19:38:43,910 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 19:38:44,065 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 19:38:52,713 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 19:38:52,713 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 19:38:53,388 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 19:39:00,469 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 19:39:00,527 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 19:39:00,613 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 19:39:00,784 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 19:39:00,869 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 19:39:00,955 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 19:39:02,060 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 19:39:04,740 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 19:39:05,122 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 19:39:05,186 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 19:39:05,270 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 19:39:05,345 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 19:39:05,400 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 19:39:05,575 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 19:39:06,166 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 19:39:09,856 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 19:39:09,857 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 19:39:20,810 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 19:39:20,812 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 19:39:21,381 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 19:39:30,542 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 19:39:30,545 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 19:39:30,608 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 19:39:30,820 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 19:39:30,903 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 19:39:30,990 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 19:39:35,372 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 19:39:40,489 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 19:39:40,539 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 19:39:40,595 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 19:39:40,671 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 19:39:40,723 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 19:39:40,777 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 19:39:40,887 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 19:39:41,237 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 19:39:46,261 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 19:39:46,262 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 19:39:52,453 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 19:39:52,454 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 19:39:52,973 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 19:40:05,159 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 19:40:05,161 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 19:40:05,198 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 19:40:05,430 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 19:40:05,521 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 19:40:05,606 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 19:40:06,532 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 19:40:08,317 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 19:40:08,364 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 19:40:08,408 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 19:40:08,459 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 19:40:08,508 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 19:40:08,549 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 19:40:08,633 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 19:40:08,928 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 19:40:12,609 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 19:40:12,611 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 19:40:15,598 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 19:40:15,599 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 19:40:15,904 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 19:40:23,733 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 19:40:23,734 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 19:40:23,774 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 19:40:24,032 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 19:40:24,127 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 19:40:24,219 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 19:40:25,251 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 19:40:27,430 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 19:40:27,552 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 19:40:27,634 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 19:40:27,713 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 19:40:27,792 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 19:40:27,863 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 19:40:27,980 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 19:40:28,232 - Driver Posting -INFO - ################# Close Browser #################
+2022-11-26 19:40:29,592 - Driver Posting -INFO - ################# Open Chrome Browser #################
+2022-11-26 19:40:29,593 - Driver Posting -INFO - ################# Open URL #################
+2022-11-26 19:40:35,543 - Driver Posting -INFO - ################# Validate the support page directly #################
+2022-11-26 19:40:35,544 - Driver Posting -INFO - ################# Type Driver Model #################
+2022-11-26 19:40:36,079 - Driver Posting -INFO - ################# Click on Search button #################
+2022-11-26 19:40:42,274 - Driver Posting -INFO - ################# Clciked on Model Search Link #################
+2022-11-26 19:40:42,275 - Driver Posting -INFO - ################# Validate the Model LinkPage #################
+2022-11-26 19:40:42,341 - Driver Posting -INFO - ################# SelectOS #################
+2022-11-26 19:40:42,615 - Driver Posting -INFO - ################# SelectLanguage #################
+2022-11-26 19:40:42,694 - Driver Posting -INFO - ################# SelectTag #################
+2022-11-26 19:40:42,773 - Driver Posting -INFO - ################# Apply Filters #################
+2022-11-26 19:40:43,870 - Driver Posting -INFO - ################# PS Driver MoreDetails Link #################
+2022-11-26 19:40:45,475 - Driver Posting -INFO - ################# Get PS_x86 Driver ReleasedDate #################
+2022-11-26 19:40:45,520 - Driver Posting -INFO - ################# Get PS_x86 Driver Version #################
+2022-11-26 19:40:45,563 - Driver Posting -INFO - ################# Get PS_x86 Driver Size #################
+2022-11-26 19:40:45,611 - Driver Posting -INFO - ################# PS_x86 Driver Filename #################
+2022-11-26 19:40:45,656 - Driver Posting -INFO - ################# Get PS_x86 Driver Tagname #################
+2022-11-26 19:40:45,703 - Driver Posting -INFO - #################  Click CheckAgreeBtn #################
+2022-11-26 19:40:45,804 - Driver Posting -INFO - ################# Clcik DownloadBtn #################
+2022-11-26 19:40:46,090 - Driver Posting -INFO - ################# Close Browser #################
