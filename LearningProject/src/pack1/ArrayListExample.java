@@ -12,6 +12,7 @@ public class ArrayListExample {
 		list.add("Welcome");
 		list.add("Sankara");
 		list.add("101");
+		list.add("102");
 		
 		System.out.println(list.size());
 		System.out.println(list);
