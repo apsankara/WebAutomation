@@ -23,7 +23,7 @@ Feature: Test XeroxSupportHomePage for PS_x86bit
     When Get PS_x86 Driver Tagname <Tags>
     When Click CheckAgreeBtn
     When Clcik DownloadBtn
-
+		
     Examples: 
       | Platform            | Language         | Tag | Released             | Version            | Size           | Filename                            | Tags                                                  |
       | Windows 10          | English (Global) | GPD | Released: 06/23/2022 | Version: 5.887.3.0 | Size: 40.36 MB | Filename: UNIV_5.887.3.0_PS_x86.zip | Tags: GPD, Package-Aware, PostScript, V3 Driver, WHQL |

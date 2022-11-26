@@ -49,7 +49,8 @@ public class GPD_PS_English_Execution extends BaseClass {
 		if(br.equals("chrome")) {
 			//WebDriverManager.chromedriver().setup();
 			//String ProjectPath="C:\\SeleniumSetup\\chromedriver_win32\\chromedriver.exe";		
-			System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");		
+			//System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");	
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();		
 			driver.manage().window().maximize();	
 			logger.info("################# Open Chrome Browser #################");
@@ -268,10 +269,8 @@ public class GPD_PS_English_Execution extends BaseClass {
 	public void closebrowser() 
 	{
 		logger.info("################# Close Browser #################");
-		driver.quit();
+		this.driver.quit();
 	}
 	
-
-
 
 }
