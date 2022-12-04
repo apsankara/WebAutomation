@@ -7,7 +7,8 @@ public class ArrayListExample {
 	public static void main(String[] args) {
 		
 		
-		ArrayList list=new ArrayList();
+		//ArrayList<Object> list=new ArrayList<Object>();
+		ArrayList<String> list=new ArrayList<String>();
 		list.add("100");
 		list.add("Welcome");
 		list.add("Sankara");

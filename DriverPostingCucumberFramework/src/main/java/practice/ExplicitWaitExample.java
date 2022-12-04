@@ -34,6 +34,7 @@ public class ExplicitWaitExample {
 		
 		FluentWait<WebDriver> wait=new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
 .pollingEvery(Duration.ofSeconds(10)).ignoring(NoSuchElementException.class);
+		
 		WebElement element=wait.until( x -> driver.findElement(By.linkText("My Profile"))); 
 		
 		/*

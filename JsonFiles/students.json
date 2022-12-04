@@ -1,0 +1,24 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "Lingam",
+      "location": "Chennai",
+      "phone": "9962256476",
+      "courses": [
+        "javaSelenuim",
+        "seleniumJAva"
+      ]
+    },
+    {
+      "name": "Lingam",
+      "location": "Che",
+      "phone": "9962",
+      "courses": [
+        "javaSelenuim",
+        "seleniumJAva"
+      ],
+      "id": 2
+    }
+  ]
+}
