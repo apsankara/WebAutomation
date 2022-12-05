@@ -15,6 +15,11 @@ npm install -g json-server
 
 json-server .json filename
 
+API Testing
+.header("title", "Support - Xerox Global Print Driver - Xerox");
+https://www.support.xerox.com/en-us/product/global-printer-driver
+
+
 pm.sendRequest("https://www.support.xerox.com/", function (err, response) {
 if(response.code!=201){
     console.error("Health Check Failed-Server is Down!")
