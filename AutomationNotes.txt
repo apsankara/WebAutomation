@@ -1,5 +1,19 @@
 Automations notes from sankar
 
+PostMan API Testing
+
+Installing the NOde JS
+
+Download NOde js in website 
+
+install the node js 
+check node --version in cmd
+check npm --version in cmd
+
+
+npm install -g json-server
+
+json-server .json filename
 
 pm.sendRequest("https://www.support.xerox.com/", function (err, response) {
 if(response.code!=201){
