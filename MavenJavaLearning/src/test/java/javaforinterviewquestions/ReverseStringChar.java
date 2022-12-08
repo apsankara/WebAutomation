@@ -1,6 +1,6 @@
 package javaforinterviewquestions;
 
-public class ReverseString {
+public class ReverseStringChar {
 
 	public static void main(String[] args) {
 		

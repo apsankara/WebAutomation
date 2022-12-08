@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 
-public class ReverseStringCollections {
+public class ReverseStringCollectionsChar {
 
 	public static void main(String[] args) {
 			
