@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Login Page">
+  <test thread-count="5" name="LoginValidation">
+ <!-- <parameter name="username" value="Admin"></parameter>-->
+ <!-- <parameter name="password" value="admin123"></parameter> -->
+    <classes>
+      <class name="loginTestCases.LoginPage"/>
+    </classes>
+  </test> <!-- LoginValidation -->
+</suite> <!-- Login Page -->

@@ -17,15 +17,24 @@ br_name varchar(20) NOT NULL,
 addr varchar(200)
 );
 
+drop table branch;
 
 CREATE TABLE employee(
 emp_id INT PRIMARY KEY AUTO_INCREMENT,
 ename VARCHAR(20) NOT NULL,
 job_desc VARCHAR(30),
 salary INT,
-branch_id int,
-constraint FK_branch_id Foreign key(branch_id) references branch(branch_id)
+branch_id int
 );
+
+drop table employee;
+
+select * from branch;
+select * from employee;
+show index from branch;
+
+alter table employee add Foreign key(branch_id) references branch(branch_id);
+
 
 
 ALTER TABLE branch add column dept varchar(30);
@@ -105,3 +114,11 @@ SELECT job_desc,count(job_desc) job_count from employee GROUP BY job_desc having
 
 Select * From employee;
 select * from branch;
+
+Select employee.emp_id,employee.ename,employee.Job_Desc,branch.br_name
+from employee
+JOIN branch
+ON employee.branch_id=branch.branch_id
+order by emp_id;
+
+alter table employee add FOREIGN KEY(branch_id) REFERENCES branch(branch_id);
