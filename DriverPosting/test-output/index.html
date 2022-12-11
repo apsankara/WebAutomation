@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 7 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" panel-name="suite-Global_Print_Driver" class="navigator-link">
+              <span class="suite-name border-failed">Global Print Driver</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                  <a href="#" panel-name="test-xml-Global_Print_Driver" class="navigator-link ">
                     <span>C:\WebAutomation\DriverPosting\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-Global_Print_Driver" class="navigator-link ">
+                    <span class="test-stats">8 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Global_Print_Driver" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Global_Print_Driver" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Global_Print_Driver" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Global_Print_Driver" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Global_Print_Driver" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,21 +93,79 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">9 methods, 7 failed,  1 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="hide-methods failed suite-Global_Print_Driver"> (hide)</a> <!-- hide-methods failed suite-Global_Print_Driver -->
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="show-methods failed suite-Global_Print_Driver"> (show)</a> <!-- show-methods failed suite-Global_Print_Driver -->
+                    </span>
+                    <div class="method-list-content failed suite-Global_Print_Driver">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC6_PCL6_X64_Download" class="method navigator-link" hash-for-method="PCL6Driver_X64_PlatformDownload">PCL6Driver_X64_PlatformDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC2_PCL6_X64_Exeution" class="method navigator-link" hash-for-method="PCL6Driver_X64_PlatformExecution">PCL6Driver_X64_PlatformExecution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC7_PCL6_X86_Download" class="method navigator-link" hash-for-method="PCL6Driver_X86_PlatformDownload">PCL6Driver_X86_PlatformDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC3_PCL6_X86_Exeution" class="method navigator-link" hash-for-method="PCL6Driver_X86_PlatformExecution">PCL6Driver_X86_PlatformExecution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC4_PS_X64_Download" class="method navigator-link" hash-for-method="PSDriver_X64_PlatformDownload">PSDriver_X64_PlatformDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC0_PS_X64_Exeution" class="method navigator-link" hash-for-method="PSDriver_X64_PlatformExecution">PSDriver_X64_PlatformExecution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC5_PS_X86_Download" class="method navigator-link" hash-for-method="PSDriver_X86_PlatformDownload">PSDriver_X86_PlatformDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Global_Print_Driver -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="hide-methods skipped suite-Global_Print_Driver"> (hide)</a> <!-- hide-methods skipped suite-Global_Print_Driver -->
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="show-methods skipped suite-Global_Print_Driver"> (show)</a> <!-- show-methods skipped suite-Global_Print_Driver -->
+                    </span>
+                    <div class="method-list-content skipped suite-Global_Print_Driver">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC0_PS_X64_Exeution" class="method navigator-link" hash-for-method="PSDriver_X64_PlatformExecution">PSDriver_X64_PlatformExecution</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Global_Print_Driver -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="hide-methods passed suite-Global_Print_Driver"> (hide)</a> <!-- hide-methods passed suite-Global_Print_Driver -->
+                      <a href="#" panel-name="suite-Global_Print_Driver" class="show-methods passed suite-Global_Print_Driver"> (show)</a> <!-- show-methods passed suite-Global_Print_Driver -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content passed suite-Global_Print_Driver">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC0_PS_X64_Exeution" class="method navigator-link" hash-for-method="PSDriver_X64_PlatformExecution">PSDriver_X64_PlatformExecution</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Global_Print_Driver" title="testCases.TC1_PS_X86_Exeution" class="method navigator-link" hash-for-method="PSDriver_X86_PlatformExecution">PSDriver_X86_PlatformExecution</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Global_Print_Driver -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -118,10 +176,121 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+        <div panel-name="suite-Global_Print_Driver" class="panel Global_Print_Driver">
+          <div class="suite-Global_Print_Driver-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC2_PCL6_X64_Exeution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PCL6Driver_X64_PlatformExecution">
+                  </a> <!-- PCL6Driver_X64_PlatformExecution -->
+                  <span class="method-name">PCL6Driver_X64_PlatformExecution</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8acd6fd6e797e0cfa76cabc2c5300cf4
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PCL6_x64_PlatformFunExecution.PlatformSelection(PCL6_x64_PlatformFunExecution.java:113)
+	at testCases.TC2_PCL6_X64_Exeution.PCL6Driver_X64_PlatformExecution(TC2_PCL6_X64_Exeution.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC3_PCL6_X86_Exeution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PCL6Driver_X86_PlatformExecution">
+                  </a> <!-- PCL6Driver_X86_PlatformExecution -->
+                  <span class="method-name">PCL6Driver_X86_PlatformExecution</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 292eb946cabfd70cc563b900f7c659d7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PCL6_x86_PlatformFunExecution.PlatformSelection(PCL6_x86_PlatformFunExecution.java:111)
+	at testCases.TC3_PCL6_X86_Exeution.PCL6Driver_X86_PlatformExecution(TC3_PCL6_X86_Exeution.java:15)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC6_PCL6_X64_Download</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PCL6Driver_X64_PlatformDownload">
+                  </a> <!-- PCL6Driver_X64_PlatformDownload -->
+                  <span class="method-name">PCL6Driver_X64_PlatformDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d828e9563daf300af3055c4b394df61c
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PCL6_x64_DriverDownloadFun.PlatformSelection(PCL6_x64_DriverDownloadFun.java:113)
+	at testCases.TC6_PCL6_X64_Download.PCL6Driver_X64_PlatformDownload(TC6_PCL6_X64_Download.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">testCases.TC0_PS_X64_Exeution</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -130,12 +299,197 @@
                   <a name="PSDriver_X64_PlatformExecution">
                   </a> <!-- PSDriver_X64_PlatformExecution -->
                   <span class="method-name">PSDriver_X64_PlatformExecution</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a095fd9fd5261dad4de6fb3742375dd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PS_x64_PlatformFunExecution.PlatformSelection(PS_x64_PlatformFunExecution.java:113)
+	at testCases.TC0_PS_X64_Exeution.PSDriver_X64_PlatformExecution(TC0_PS_X64_Exeution.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="test-xml-Suite" class="panel">
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC4_PS_X64_Download</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PSDriver_X64_PlatformDownload">
+                  </a> <!-- PSDriver_X64_PlatformDownload -->
+                  <span class="method-name">PSDriver_X64_PlatformDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51582}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d395175966f4a4ef885cc1e6600a1aa0
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PS_x64_DriverDownloadFun.PlatformSelection(PS_x64_DriverDownloadFun.java:112)
+	at testCases.TC4_PS_X64_Download.PSDriver_X64_PlatformDownload(TC4_PS_X64_Download.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC7_PCL6_X86_Download</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PCL6Driver_X86_PlatformDownload">
+                  </a> <!-- PCL6Driver_X86_PlatformDownload -->
+                  <span class="method-name">PCL6Driver_X86_PlatformDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51838}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 33076b4cf5817beaf3a364cb2daf8887
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PCL6_x86_DriverDownloadFun.PlatformSelection(PCL6_x86_DriverDownloadFun.java:111)
+	at testCases.TC7_PCL6_X86_Download.PCL6Driver_X86_PlatformDownload(TC7_PCL6_X86_Download.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC5_PS_X86_Download</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PSDriver_X86_PlatformDownload">
+                  </a> <!-- PSDriver_X86_PlatformDownload -->
+                  <span class="method-name">PSDriver_X86_PlatformDownload</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51666}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5c61f4e6c60faa865b7a2758e21d45d1
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PS_x86_DriverDownloadFun.PlatformSelection(PS_x86_DriverDownloadFun.java:113)
+	at testCases.TC5_PS_X86_Download.PSDriver_X86_PlatformDownload(TC5_PS_X86_Download.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-failed -->
+          <div class="suite-Global_Print_Driver-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC0_PS_X64_Exeution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PSDriver_X64_PlatformExecution">
+                  </a> <!-- PSDriver_X64_PlatformExecution -->
+                  <span class="method-name">PSDriver_X64_PlatformExecution</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=108.0.5359.99)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-RQDV8HS&apos;, ip: &apos;172.29.32.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.99, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AADHIN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:51053}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6a095fd9fd5261dad4de6fb3742375dd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.getTagName(RemoteWebElement.java:128)
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:45)
+	at reUseFunctions.PS_x64_PlatformFunExecution.PlatformSelection(PS_x64_PlatformFunExecution.java:113)
+	at testCases.TC0_PS_X64_Exeution.PSDriver_X64_PlatformExecution(TC0_PS_X64_Exeution.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-skipped -->
+          <div class="suite-Global_Print_Driver-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC1_PS_X86_Exeution</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="PSDriver_X86_PlatformExecution">
+                  </a> <!-- PSDriver_X86_PlatformExecution -->
+                  <span class="method-name">PSDriver_X86_PlatformExecution</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Global_Print_Driver-class-passed -->
+        </div> <!-- panel Global_Print_Driver -->
+        <div panel-name="test-xml-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">C:\WebAutomation\DriverPosting\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -143,79 +497,167 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite name=&quot;Global Print Driver&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PS_X64&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC0_PS_X64_Exeution&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
+  &lt;/test&gt; &lt;!-- PS_X64 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PS_X86&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC1_PS_X86_Exeution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PS_X86 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PCL6_X64&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC2_PCL6_X64_Exeution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PCL6_X64 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PCL6_X86&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC3_PCL6_X86_Exeution&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PCL6_X86 --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PS_X64_Download&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC4_PS_X64_Download&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PS_X64_Download --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PS_X86_Download&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC5_PS_X86_Download&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PS_X86_Download --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PCL6_X64_Download&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC6_PCL6_X64_Download&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PCL6_X64_Download --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;PCL6_X86_Download&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;testCases.TC7_PCL6_X86_Download&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- PCL6_X86_Download --&gt;
+&lt;/suite&gt; &lt;!-- Global Print Driver --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Suite" class="panel">
+        <div panel-name="testlist-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite</span>
+            <span class="header-content">Tests for Global Print Driver</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">PS_X64 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PS_X86 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PCL6_X64 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PCL6_X86 (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PS_X64_Download (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PS_X86_Download (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PCL6_X64_Download (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">PCL6_X86_Download (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Suite" class="panel">
+        <div panel-name="group-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite</span>
+            <span class="header-content">Groups for Global Print Driver</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Suite" class="panel">
+        <div panel-name="times-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite</span>
+            <span class="header-content">Times for Global Print Driver</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite');
-function tableData_Suite() {
+suiteTableInitFunctions.push('tableData_Global_Print_Driver');
+function tableData_Global_Print_Driver() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'PSDriver_X64_PlatformExecution')
-data.setCell(0, 2, 'testCases.TC0_PS_X64_Exeution')
-data.setCell(0, 3, 52552);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+data.setCell(0, 1, 'PSDriver_X86_PlatformExecution')
+data.setCell(0, 2, 'testCases.TC1_PS_X86_Exeution')
+data.setCell(0, 3, 81310);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'PSDriver_X64_PlatformExecution')
+data.setCell(1, 2, 'testCases.TC0_PS_X64_Exeution')
+data.setCell(1, 3, 30929);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'PCL6Driver_X64_PlatformExecution')
+data.setCell(2, 2, 'testCases.TC2_PCL6_X64_Exeution')
+data.setCell(2, 3, 13480);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'PCL6Driver_X86_PlatformExecution')
+data.setCell(3, 2, 'testCases.TC3_PCL6_X86_Exeution')
+data.setCell(3, 3, 10271);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'PCL6Driver_X64_PlatformDownload')
+data.setCell(4, 2, 'testCases.TC6_PCL6_X64_Download')
+data.setCell(4, 3, 9956);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'PSDriver_X64_PlatformDownload')
+data.setCell(5, 2, 'testCases.TC4_PS_X64_Download')
+data.setCell(5, 3, 9700);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'PSDriver_X64_PlatformExecution')
+data.setCell(6, 2, 'testCases.TC0_PS_X64_Exeution')
+data.setCell(6, 3, 9527);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'PCL6Driver_X86_PlatformDownload')
+data.setCell(7, 2, 'testCases.TC7_PCL6_X86_Download')
+data.setCell(7, 3, 9295);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'PSDriver_X86_PlatformDownload')
+data.setCell(8, 2, 'testCases.TC5_PS_X86_Download')
+data.setCell(8, 3, 8945);
+window.suiteTableData['Global_Print_Driver']= { tableData: data, tableDiv: 'times-div-Global_Print_Driver'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 52 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
+              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <div id="times-div-Global_Print_Driver">
+              </div> <!-- times-div-Global_Print_Driver -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite" class="panel">
+        <div panel-name="reporter-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite</span>
+            <span class="header-content">Reporter output for Global Print Driver</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite" class="panel">
+        <div panel-name="ignored-methods-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Suite" class="panel">
+        <div panel-name="chronological-Global_Print_Driver" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -228,19 +670,202 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">lanchBrowser</span>
-                <span class="method-start">417 ms</span>
+                <span class="method-start">208 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">method(public void testCases.TC0_PS_X64_Exeution.PSDriver_X64_PlatformExecution() throws java.lang.Exceptio...)</span>
-                <span class="method-start">12752 ms</span>
+                <span class="method-start">15644 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">PSDriver_X64_PlatformExecution</span>
-                <span class="method-start">12761 ms</span>
+                <span class="method-start">15719 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC0_PS_X64_Exeution.PSDriver_X64_PlatformExecution() throws java.lang.Exceptio...)</span>
+                <span class="method-start">46776 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PSDriver_X64_PlatformExecution</span>
+                <span class="method-start">46778 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">65316 ms</span>
+                <span class="method-start">56309 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC1_PS_X86_Exeution</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">61733 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">61738 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC1_PS_X86_Exeution.PSDriver_X86_PlatformExecution() throws java.lang.Exceptio...)</span>
+                <span class="method-start">69184 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">PSDriver_X86_PlatformExecution</span>
+                <span class="method-start">69185 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">150496 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC2_PCL6_X64_Exeution</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">154380 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">154383 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC2_PCL6_X64_Exeution.PCL6Driver_X64_PlatformExecution() throws java.lang.Exce...)</span>
+                <span class="method-start">161674 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PCL6Driver_X64_PlatformExecution</span>
+                <span class="method-start">161675 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">175157 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC3_PCL6_X86_Exeution</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">176003 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">176004 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC3_PCL6_X86_Exeution.PCL6Driver_X86_PlatformExecution() throws java.lang.Exce...)</span>
+                <span class="method-start">177795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PCL6Driver_X86_PlatformExecution</span>
+                <span class="method-start">177795 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">188068 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC4_PS_X64_Download</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">188518 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">188519 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC4_PS_X64_Download.PSDriver_X64_PlatformDownload() throws java.lang.Exception)</span>
+                <span class="method-start">190447 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PSDriver_X64_PlatformDownload</span>
+                <span class="method-start">190448 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">200149 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC5_PS_X86_Download</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">200684 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">200686 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC5_PS_X86_Download.PSDriver_X86_PlatformDownload() throws java.lang.Exception)</span>
+                <span class="method-start">201754 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PSDriver_X86_PlatformDownload</span>
+                <span class="method-start">201754 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">210699 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC6_PCL6_X64_Download</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">211058 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">211059 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC6_PCL6_X64_Download.PCL6Driver_X64_PlatformDownload() throws java.lang.Excep...)</span>
+                <span class="method-start">212399 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PCL6Driver_X64_PlatformDownload</span>
+                <span class="method-start">212399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">222358 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC7_PCL6_X86_Download</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">report</span>
+                <span class="method-start">222786 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">lanchBrowser</span>
+                <span class="method-start">222787 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">method(public void testCases.TC7_PCL6_X86_Download.PCL6Driver_X86_PlatformDownload() throws java.lang.Excep...)</span>
+                <span class="method-start">224354 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">PCL6Driver_X86_PlatformDownload</span>
+                <span class="method-start">224354 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">closeBrowser</span>
+                <span class="method-start">233650 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
