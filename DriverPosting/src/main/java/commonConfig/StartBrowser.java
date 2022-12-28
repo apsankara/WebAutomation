@@ -53,8 +53,8 @@ public class StartBrowser {
 	@BeforeClass
 	  public void lanchBrowser() {
 		 
-		  //System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
+		 System.setProperty("webdriver.chrome.driver", "C:/SeleniumSetup/chromedriver_win32/chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
 			
 		  driver= new ChromeDriver();
 			//WebDriverManager.edgedriver().setup();
@@ -64,6 +64,8 @@ public class StartBrowser {
 		  driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
 		  driver.manage().timeouts().pageLoadTimeout(50, TimeUnit.SECONDS);
+		  driver.manage().deleteAllCookies();
+		  driver.get("chrome://settings/clearBrowserData");
 		  //driver.get("https://www.support.xerox.com/en-us/product/global-printer-driver/downloads" );
 		  //driver.get("https://www.support.xerox.com/");
 	  }
