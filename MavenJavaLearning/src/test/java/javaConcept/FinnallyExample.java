@@ -8,7 +8,7 @@ public class FinnallyExample {
 		try{
 			System.out.println("Inside try block");  
 		      // below code throws divide by zero exception  
-		       int data=25/0;    
+		       int data=25/2;    
 		       System.out.println(data);    
 		}
 		// handles the Arithmetic Exception / Divide by zero exception 
