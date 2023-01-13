@@ -1,6 +1,6 @@
 package sDETInterviewQuestion;
 
-public class ReverseStringBuffet {
+public class ReverseStringBuffer {
 
 	public static void main(String[] args) {
 		//Reverse the String using String Buffer.
