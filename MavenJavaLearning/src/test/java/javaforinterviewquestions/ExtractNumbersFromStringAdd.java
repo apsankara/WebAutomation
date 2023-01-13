@@ -16,8 +16,9 @@ public class ExtractNumbersFromStringAdd {
 		//check the input as isNumeric from character
 		for(int i=0;i<length;i++) {
 			char character=input.charAt(i);
-			if(Character.isDigit(character)) {
+			if(Character.isDigit(character)) {		
 				int total1=Character.getNumericValue(character);
+				System.out.println(total1);
 				total=total+total1;
 			}
 				

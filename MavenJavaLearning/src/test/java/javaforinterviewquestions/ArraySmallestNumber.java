@@ -35,7 +35,6 @@ public class ArraySmallestNumber {
 		small.smallestnumber();
 		small.usingArray();
 		small.collections();
-		
 	}
 	
 	public void collections() {

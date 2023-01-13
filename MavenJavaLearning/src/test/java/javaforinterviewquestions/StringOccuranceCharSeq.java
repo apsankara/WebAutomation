@@ -22,7 +22,6 @@ public class StringOccuranceCharSeq {
 		}
 		System.out.println(occurance);
 
-
 	}
 
 }

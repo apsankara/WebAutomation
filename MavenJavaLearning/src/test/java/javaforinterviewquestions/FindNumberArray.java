@@ -6,7 +6,7 @@ public class FindNumberArray {
 
 	public void numberToFind() {
 
-		int numbercheck=31;
+		int numbercheck=3;
 
 		boolean found=false;
 
