@@ -7,9 +7,9 @@ public class AddEvenNo {
 		
 		if(number%2==0) 
 		{
-			System.out.println("even");
+			System.out.println("This is Even Number");
 		}else {
-			System.out.println("add");
+			System.out.println("This is Add Number");
 			
 		}
 	}
