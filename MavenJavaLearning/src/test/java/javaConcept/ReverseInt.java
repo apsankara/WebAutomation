@@ -11,7 +11,7 @@ public class ReverseInt {
 		System.out.println("Enter the Integer");
 		
 		int num=scan.nextInt();
-		
+		scan.close();
 		//using StringBuffer
 		//StringBuffer rev;
 		//StringBuffer buff=new StringBuffer(String.valueOf(num));

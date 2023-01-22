@@ -11,7 +11,7 @@ public class StringCountExample {
 	public void charArray() {
 		int size=0;
 		char[] chararray=str.toCharArray();
-		for (char c : chararray) {
+		for (@SuppressWarnings("unused") char c : chararray) {
 			size++;
 		}
 		System.out.println(size);

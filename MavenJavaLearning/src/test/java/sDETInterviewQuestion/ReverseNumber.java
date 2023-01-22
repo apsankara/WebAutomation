@@ -14,7 +14,7 @@ public class ReverseNumber {
 		int number=scaninput.nextInt();
 		
 		System.out.println(number);
-		
+		scaninput.close();
 		//1.Using algoritham
 		/*int revnumber=0;
 		

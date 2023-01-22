@@ -11,7 +11,7 @@ public class PalindromString {
 		String name=scan.next();
 		
 		String org_name=name;
-		
+		scan.close();
 		String reverse="";
 		
 		for(int i=name.length()-1;i>=0;i--)

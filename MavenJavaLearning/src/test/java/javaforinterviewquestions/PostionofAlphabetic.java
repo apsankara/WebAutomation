@@ -13,7 +13,7 @@ public class PostionofAlphabetic {
 		System.out.println("Enter the Char");
 		
 		char charval=scan.next().charAt(0);
-		
+		scan.close();
 		char val=Character.toLowerCase(charval);
 		
 		int asciival=(int)val;

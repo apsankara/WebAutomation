@@ -15,6 +15,7 @@ public class SwapTwoNumber {
 		
 		givennumber=scan.nextInt();
 		
+		scan.close();
 		while(givennumber!=0) {
 		reversenumber=reversenumber*10;
 		reversenumber=reversenumber+givennumber%10;

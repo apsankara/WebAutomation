@@ -12,7 +12,7 @@ public class PalindromNumber {
 		int num=scan.nextInt();
 		int org_num=num;
 		int rev=0;
-		
+		scan.close();
 		while(num!=0) {
 			rev=rev*10 + num%10;
 			num=num/10;

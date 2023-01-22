@@ -13,7 +13,7 @@ public class ReverseStringScanner {
 		String name=scan.nextLine();
 		
 		System.out.println(name);
-		
+		scan.close();
 		char[] array=name.toCharArray();
 		
 		String reverse="";

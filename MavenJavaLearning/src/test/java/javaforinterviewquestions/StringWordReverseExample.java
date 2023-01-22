@@ -28,7 +28,7 @@ public class StringWordReverseExample {
 		String character=scan.nextLine();
 		
 		System.out.println(character);
-		
+		scan.close();
 		String reverse="";
 		
 		char[] charArray=character.toCharArray();
